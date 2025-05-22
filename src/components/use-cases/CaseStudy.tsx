@@ -44,7 +44,7 @@ const CaseStudy = ({
             
             {/* Client name and headline */}
             
-            <p className="text-2xl text-apple-blue md:text-4xl font-extrabold">
+            <p className="text-2xl text-apple-blue font-extrabold md:text-4xl">
               {headline}
             </p>
           </div>
@@ -52,7 +52,7 @@ const CaseStudy = ({
       </div>
       
       {/* Main content section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="text-2xl text-apple-blue md:text-4xl font-normal">
         {/* Left side - Visual content */}
         <div className="bg-gray-100 p-6">
           <div className="flex flex-col space-y-6">
