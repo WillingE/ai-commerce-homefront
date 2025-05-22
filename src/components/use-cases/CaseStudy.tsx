@@ -47,7 +47,7 @@ const CaseStudy = ({
         <div className="order-1">
           <Card className="overflow-hidden border-0 rounded-3xl shadow-xl">
             <img 
-              src={image} 
+              src="/lovable-uploads/6281928c-0dbc-4934-a537-998d49e479ff.png" 
               alt={title} 
               className="w-full h-auto object-cover aspect-[4/3]"
             />
