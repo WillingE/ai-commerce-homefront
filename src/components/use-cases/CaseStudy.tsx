@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -57,16 +58,16 @@ const CaseStudy = ({
       {/* Main content section */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left side - Visual content */}
-        <div className="bg-gray-100 p-6 mx-0 px-[24px]">
-          <div className="flex flex-col space-y-6">
+        <div className="bg-gray-100 p-6 flex items-center justify-center">
+          <div className="flex flex-col space-y-6 w-full">
             {/* Primary image */}
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src={primaryImage} alt={`${clientName} - Product image 1`} className="w-full h-auto object-fill" />
+              <img src={primaryImage} alt={`${clientName} - Product image`} className="w-full h-auto object-cover" />
             </div>
             
-            {/* Secondary image */}
+            {/* Secondary image - Hidden for now */}
             <div className="rounded-lg overflow-hidden shadow-md">
-              
+              {/* Secondary image is not currently displayed */}
             </div>
           </div>
         </div>
