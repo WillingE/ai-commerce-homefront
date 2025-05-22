@@ -1,4 +1,6 @@
 
+import { cn } from "@/lib/utils";
+
 const logos = [
   { id: 1, name: "Acme Corp", url: "https://via.placeholder.com/150x50" },
   { id: 2, name: "TechGiant", url: "https://via.placeholder.com/150x50" },
