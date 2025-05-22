@@ -1,7 +1,9 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+
 interface CaseStudyProps {
   headline: string;
   clientName: string;
@@ -17,6 +19,7 @@ interface CaseStudyProps {
   learnMoreText?: string;
   className?: string;
 }
+
 const CaseStudy = ({
   headline,
   clientName,
@@ -32,19 +35,24 @@ const CaseStudy = ({
   learnMoreText,
   className
 }: CaseStudyProps) => {
-  return <Card className={cn("overflow-hidden border-0 rounded-3xl shadow-lg mb-16", className)}>
+  return (
+    <Card className={cn("overflow-hidden border-0 rounded-3xl shadow-lg mb-16", className)}>
       {/* Header section with refined background */}
       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 py-5 px-6 md:px-8 border-b border-gray-100">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col space-y-2">
             {/* Industry tag */}
             <div>
-              
+              <span className="text-apple-blue text-sm font-medium bg-blue-50 border border-blue-100 px-3 py-1 rounded-full">
+                {industry}
+              </span>
             </div>
             
             {/* Client name and headline */}
-            
-            <p className="text-2xl text-apple-blue md:text-4xl font-extrabold">
+            <h2 className="text-xl md:text-2xl font-semibold text-apple-gray-800 mb-1">
+              {clientName}
+            </h2>
+            <p className="text-2xl md:text-3xl font-bold text-apple-blue">
               {headline}
             </p>
           </div>
@@ -58,12 +66,20 @@ const CaseStudy = ({
           <div className="flex flex-col space-y-6">
             {/* Primary image */}
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src={primaryImage} alt={`${clientName} - Product image 1`} className="w-full h-auto object-cover" />
+              <img 
+                src={primaryImage} 
+                alt={`${clientName} - Product image 1`}
+                className="w-full h-auto object-cover"
+              />
             </div>
             
             {/* Secondary image */}
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src={secondaryImage} alt={`${clientName} - Product image 2`} className="w-full h-auto object-cover" />
+              <img 
+                src={secondaryImage} 
+                alt={`${clientName} - Product image 2`}
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
@@ -101,25 +117,33 @@ const CaseStudy = ({
           </div>
           
           {/* Client Quote */}
-          {quote && <div className="border-l-4 border-apple-blue pl-4 py-3 bg-blue-50 rounded-r-lg">
+          {quote && (
+            <div className="border-l-4 border-apple-blue pl-4 py-3 bg-blue-50 rounded-r-lg">
               <p className="text-apple-gray-700 italic">
                 "{quote}"
               </p>
-              {quoteAuthor && <p className="text-apple-gray-600 mt-2 text-sm">
+              {quoteAuthor && (
+                <p className="text-apple-gray-600 mt-2 text-sm">
                   — {quoteAuthor}
-                </p>}
-            </div>}
+                </p>
+              )}
+            </div>
+          )}
           
           {/* Learn More Link */}
-          {learnMoreLink && <div className="mt-4">
+          {learnMoreLink && (
+            <div className="mt-4">
               <Button variant="link" className="p-0 h-auto text-apple-blue" asChild>
                 <a href={learnMoreLink}>
                   {learnMoreText || "Learn more"} <ArrowRight className="ml-1 h-4 w-4" />
                 </a>
               </Button>
-            </div>}
+            </div>
+          )}
         </div>
       </div>
-    </Card>;
+    </Card>
+  );
 };
+
 export default CaseStudy;
