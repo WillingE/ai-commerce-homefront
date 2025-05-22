@@ -39,13 +39,9 @@ const CaseStudy = ({
     <Card className={cn("overflow-hidden border-0 rounded-3xl shadow-lg mb-16", className)}>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left side - Visual content */}
-        <div className="relative">
-          {/* Primary image */}
-          <img 
-            src={primaryImage} 
-            alt={`${clientName} - Primary`} 
-            className="w-full h-full object-cover aspect-[3/2]"
-          />
+        <div className="relative bg-gray-200 h-[300px] md:h-[400px] flex items-center justify-center">
+          {/* Placeholder for primary image */}
+          <p className="text-gray-500">Image will be updated</p>
           
           {/* Overlay with key result */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 md:p-8">
