@@ -1,110 +1,48 @@
 
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const location = useLocation();
+  
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-apple-gray-800">Homywork</span>
-            </Link>
-          </div>
-          
-          <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link to="/product" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
-              Product
-            </Link>
-            <Link to="/" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
-              Use Case
-            </Link>
-            <Link to="/" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
-              About
-            </Link>
-            <Link to="/" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
-              Pricing
-            </Link>
-          </div>
-          
-          <div className="hidden md:flex md:items-center">
-            <Button
-              variant="default"
-              className="rounded-full bg-apple-blue hover:bg-blue-600 text-white px-5"
-            >
-              Try Free
-            </Button>
-          </div>
-          
-          <div className="flex md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-apple-gray-600 hover:text-apple-gray-800"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              <svg
-                className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
+    <header className="w-full border-b bg-white">
+      <div className="container max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="flex items-center">
+          <Link to="/" className="text-xl font-semibold text-apple-gray-800">
+            SellerAI
+          </Link>
         </div>
-      </div>
-      
-      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-          <Link to="/product" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
+        
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link 
+            to="/" 
+            className={`text-base ${location.pathname === '/' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}
+          >
+            Home
+          </Link>
+          <Link 
+            to="/product" 
+            className={`text-base ${location.pathname === '/product' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}
+          >
             Product
           </Link>
-          <Link to="/" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
-            Use Case
-          </Link>
-          <Link to="/" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
-            About
-          </Link>
-          <Link to="/" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
-            Pricing
-          </Link>
-          <Button
-            variant="default"
-            className="w-full mt-4 rounded-full bg-apple-blue hover:bg-blue-600 text-white"
+          <Link 
+            to="/use-cases" 
+            className={`text-base ${location.pathname === '/use-cases' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}
           >
-            Try Free
+            Use Cases
+          </Link>
+        </nav>
+        
+        <div className="flex items-center space-x-4">
+          <Button variant="outline" className="hidden md:inline-flex">
+            Sign In
           </Button>
+          <Button>Get Started</Button>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
