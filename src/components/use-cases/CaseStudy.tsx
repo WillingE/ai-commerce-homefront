@@ -1,8 +1,10 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
+
 interface CaseStudyProps {
   headline: string;
   clientName: string;
@@ -18,6 +20,7 @@ interface CaseStudyProps {
   learnMoreText?: string;
   className?: string;
 }
+
 const CaseStudy = ({
   headline,
   clientName,
@@ -61,12 +64,12 @@ const CaseStudy = ({
           <div className="flex flex-col space-y-6">
             {/* Primary image */}
             <div className="rounded-lg overflow-hidden shadow-md">
-              
+              <img src={primaryImage} alt={`${clientName} - Product image 1`} className="w-full h-auto object-cover" />
             </div>
             
             {/* Secondary image */}
             <div className="rounded-lg overflow-hidden shadow-md">
-              
+              <img src={secondaryImage} alt={`${clientName} - Product image 2`} className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -125,4 +128,5 @@ const CaseStudy = ({
       </div>
     </Card>;
 };
+
 export default CaseStudy;
