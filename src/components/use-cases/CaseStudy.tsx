@@ -40,6 +40,21 @@ const CaseStudy = ({
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left side - Visual content */}
         <div className="relative bg-gray-100 flex flex-col">
+          {/* Text header at the top */}
+          <div className="bg-apple-gray-800 p-6 md:p-8">
+            <div className="mb-4">
+              <span className="text-white/80 text-sm font-medium bg-white/10 px-3 py-1 rounded-full">
+                {industry}
+              </span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-2">
+              {clientName}
+            </h2>
+            <p className="text-3xl md:text-4xl font-bold text-white">
+              {headline}
+            </p>
+          </div>
+          
           {/* Primary image at the top */}
           <div className="relative h-[250px] md:h-[300px]">
             <img 
@@ -59,21 +74,6 @@ const CaseStudy = ({
               alt={`${clientName} - Product image 2`}
               className="w-full h-full object-contain p-4"
             />
-          </div>
-          
-          {/* Overlay with key result */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 md:p-8">
-            <div className="mb-4">
-              <span className="text-white/80 text-sm font-medium bg-white/10 px-3 py-1 rounded-full">
-                {industry}
-              </span>
-            </div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-2">
-              {clientName}
-            </h2>
-            <p className="text-3xl md:text-4xl font-bold text-white">
-              {headline}
-            </p>
           </div>
         </div>
         
