@@ -1,7 +1,10 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ReactNode } from "react";
+
 interface CaseStudyProps {
   headline: string;
   clientName: string;
@@ -10,13 +13,14 @@ interface CaseStudyProps {
   secondaryImage: string;
   challenge: string;
   solution: string;
-  detailedResults: string;
+  detailedResults: ReactNode;
   quote?: string;
   quoteAuthor?: string;
   learnMoreLink?: string;
   learnMoreText?: string;
   className?: string;
 }
+
 const CaseStudy = ({
   headline,
   clientName,
@@ -97,9 +101,9 @@ const CaseStudy = ({
             <h3 className="text-lg font-medium text-apple-gray-800">
               The Results
             </h3>
-            <p className="text-apple-gray-600 mt-1 text-base">
+            <div className="text-apple-gray-600 mt-1 text-base">
               {detailedResults}
-            </p>
+            </div>
           </div>
           
           {/* Client Quote */}
@@ -124,4 +128,5 @@ const CaseStudy = ({
       </div>
     </Card>;
 };
+
 export default CaseStudy;
