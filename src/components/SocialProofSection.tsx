@@ -70,16 +70,16 @@ const SocialProofSection = () => {
           {/* Client logos in a scrolling carousel */}
           <div className="w-full overflow-hidden bg-white p-6 rounded-lg">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex items-center gap-12">
+              <div className="flex items-center gap-20">
                 {extendedLogos.map((logo, index) => (
                   <div 
                     key={`${logo.id}-${index}`} 
-                    className="flex-shrink-0 flex items-center justify-center min-w-[120px]"
+                    className="flex-shrink-0 flex items-center justify-center min-w-[150px]"
                   >
                     <img
                       src={logo.url}
                       alt={logo.name}
-                      className="h-10 md:h-12 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                      className="h-10 md:h-12 object-contain transition-all duration-300 hover:scale-105"
                     />
                   </div>
                 ))}
