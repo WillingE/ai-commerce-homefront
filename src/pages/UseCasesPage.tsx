@@ -33,16 +33,16 @@ const UseCasesPage = () => {
             quote="This AI platform transformed our international sales strategy. We're reaching more customers than ever before!"
             quoteAuthor="Jane Doe, Founder of Artisan Gems"
             learnMoreLink="#"
-            learnMoreText="See how HomeWork helped"
+            learnMoreText="See how Homywork helped"
           />
           
-          {/* Additional case studies */}
+          {/* Updated case study with first uploaded image */}
           <CaseStudy 
             headline="Custom Furniture Orders Up 85%"
             clientName="Nordic Designs"
             industry="Furniture"
-            primaryImage="/lovable-uploads/6e0b8e5d-7f51-4a93-b271-9e8307c3dfb2.png"
-            secondaryImage="/lovable-uploads/7258290f-386d-4475-b95e-27fc6b88308f.png"
+            primaryImage="/lovable-uploads/09c7c9b6-558f-472c-adc8-8bbe8e3c1568.png"
+            secondaryImage="/lovable-uploads/09c7c9b6-558f-472c-adc8-8bbe8e3c1568.png"
             challenge="Struggling to manage custom furniture orders with complex specifications and long lead times, resulting in customer dissatisfaction."
             solution="Our AI platform streamlined order processing with automated measurements interpretation and material recommendations, while providing real-time production tracking."
             detailedResults={
@@ -53,15 +53,16 @@ const UseCasesPage = () => {
             quote="The AI platform has revolutionized how we handle custom furniture orders. Our customers love the transparency and accuracy."
             quoteAuthor="Erik Johansson, CEO of Nordic Designs"
             learnMoreLink="#"
-            learnMoreText="See how HomeWork helped"
+            learnMoreText="See how Homywork helped"
           />
           
+          {/* Updated case study with second uploaded image */}
           <CaseStudy 
             headline="Inventory Costs Reduced by 34%"
             clientName="Urban Living Furniture"
             industry="Furniture"
-            primaryImage="/lovable-uploads/954091c7-15ee-4299-a10c-43324a416a36.png"
-            secondaryImage="/lovable-uploads/f25fc616-1897-4001-a256-e1d769333a09.png"
+            primaryImage="/lovable-uploads/b232ee87-5bf4-4694-bf8b-8b96f014346c.png"
+            secondaryImage="/lovable-uploads/b232ee87-5bf4-4694-bf8b-8b96f014346c.png"
             challenge="Inefficient inventory management led to overstocking of slow-moving items and stockouts of popular products, causing financial strain."
             solution="Our AI-powered inventory forecasting system analyzed sales patterns, seasonal trends, and market data to optimize stock levels across all product categories."
             detailedResults={
@@ -72,7 +73,7 @@ const UseCasesPage = () => {
             quote="The precision of the AI forecasting has transformed our business model. We're now more agile and financially healthier than ever before."
             quoteAuthor="Maria Chen, Operations Director at Urban Living"
             learnMoreLink="#"
-            learnMoreText="See how HomeWork helped"
+            learnMoreText="See how Homywork helped"
           />
         </div>
       </main>
