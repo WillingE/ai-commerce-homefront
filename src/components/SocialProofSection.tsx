@@ -1,5 +1,8 @@
 
+import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 // Updated logos to use the uploaded images
 const logos = [
@@ -35,7 +38,26 @@ const logos = [
   },
 ];
 
+// Duplicate logos to create a continuous scrolling effect
+const extendedLogos = [...logos, ...logos];
+
 const SocialProofSection = () => {
+  const autoplayOptions = useRef({
+    delay: 2000,
+    stopOnInteraction: false,
+    rootNode: (emblaRoot: any) => emblaRoot.parentElement,
+  });
+  
+  const [emblaRef] = useEmblaCarousel(
+    { 
+      loop: true,
+      align: "start",
+      dragFree: true,
+      containScroll: "trimSnaps"
+    },
+    [Autoplay(autoplayOptions.current)]
+  );
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container max-w-7xl mx-auto px-4">
@@ -45,17 +67,24 @@ const SocialProofSection = () => {
             Trusted by Sellers Across Major Marketplaces
           </h2>
           
-          {/* Client logos in a clean horizontal layout */}
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 bg-white p-10 rounded-lg">
-            {logos.map((logo) => (
-              <div key={logo.id} className="flex items-center">
-                <img
-                  src={logo.url}
-                  alt={logo.name}
-                  className="h-10 md:h-12 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-                />
+          {/* Client logos in a scrolling carousel */}
+          <div className="w-full overflow-hidden bg-white p-6 rounded-lg">
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex items-center gap-12">
+                {extendedLogos.map((logo, index) => (
+                  <div 
+                    key={`${logo.id}-${index}`} 
+                    className="flex-shrink-0 flex items-center justify-center min-w-[120px]"
+                  >
+                    <img
+                      src={logo.url}
+                      alt={logo.name}
+                      className="h-10 md:h-12 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
