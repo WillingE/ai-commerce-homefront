@@ -101,7 +101,7 @@ const CaseStudy = ({
             
             {/* Client Quote */}
             {quote && (
-              <div className="border-l-4 border-apple-blue pl-4">
+              <div className="border-l-4 border-apple-blue pl-4 py-3 bg-apple-gray-100 rounded-r-lg">
                 <p className="text-apple-gray-700 italic">
                   "{quote}"
                 </p>
