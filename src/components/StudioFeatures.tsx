@@ -1,5 +1,6 @@
+
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Image, FileFolder, FileText, Tag, Upload } from "lucide-react";
+import { ArrowRight, Image, FileCode, FileText, Tag, Upload } from "lucide-react";
 
 const StudioFeatures = () => {
   return (
@@ -20,7 +21,7 @@ const StudioFeatures = () => {
             <div className="order-2 lg:order-1">
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
-                  <FileFolder className="h-5 w-5 text-blue-600" />
+                  <FileCode className="h-5 w-5 text-blue-600" />
                   <span className="text-sm font-medium text-blue-700">Studio Category</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-semibold text-apple-gray-800">
