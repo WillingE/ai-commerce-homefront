@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">AI Commerce</h3>
+            <h3 className="text-lg font-semibold mb-4">Homywork</h3>
             <p className="text-apple-gray-400 mb-4">
               The future of AI-powered cross-border e-commerce.
             </p>
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-apple-gray-700 mt-12 pt-8 text-center text-apple-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} AI Commerce. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Homywork. All rights reserved.</p>
         </div>
       </div>
     </footer>
