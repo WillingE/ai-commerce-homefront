@@ -8,7 +8,7 @@ const CategoryFeature = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="order-2 lg:order-1">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-3 bg-blue-100 px-5 py-3 rounded-full">
+            <div className="inline-flex items-center gap-3 bg-blue-100/80 px-5 py-3 rounded-full">
               <FileCode className="h-6 w-6 text-blue-600" />
               <span className="text-base font-medium text-blue-700">Studio Category</span>
             </div>
