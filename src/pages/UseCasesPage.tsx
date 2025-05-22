@@ -14,7 +14,7 @@ const UseCasesPage = () => {
           <CaseStudy 
             headline="+150% Sales Growth in 30 Days"
             clientName="Artisan Gems"
-            industry="Handcrafted Jewelry"
+            industry="Furniture"
             primaryImage="/lovable-uploads/328328eb-cdb0-4de6-b738-70ea44db5315.png"
             secondaryImage="/lovable-uploads/1bd9f347-beb2-4d11-8231-753e9de4054c.png"
             challenge="Manual listing across 5 international platforms consumed over 20 hours weekly with inconsistent results."
