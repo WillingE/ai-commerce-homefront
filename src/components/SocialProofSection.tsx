@@ -70,11 +70,11 @@ const SocialProofSection = () => {
           {/* Client logos in a scrolling carousel */}
           <div className="w-full overflow-hidden bg-white p-6 rounded-lg">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex items-center gap-20">
+              <div className="flex items-center">
                 {extendedLogos.map((logo, index) => (
                   <div 
                     key={`${logo.id}-${index}`} 
-                    className="flex-shrink-0 flex items-center justify-center min-w-[150px]"
+                    className="flex-shrink-0 flex items-center justify-center min-w-[180px] px-6"
                   >
                     <img
                       src={logo.url}
