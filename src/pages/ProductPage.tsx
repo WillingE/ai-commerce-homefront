@@ -6,6 +6,7 @@ import StudioFeatures from "@/components/StudioFeatures";
 import ListingManager from "@/components/ListingManager";
 import AIKnowledge from "@/components/AIKnowledge";
 import ProductCta from "@/components/ProductCta";
+import SocialProofSection from "@/components/SocialProofSection";
 
 const ProductPage = () => {
   return (
@@ -13,6 +14,7 @@ const ProductPage = () => {
       <Navbar />
       <main className="flex-grow">
         <ProductHero />
+        <SocialProofSection />
         <StudioFeatures />
         <ListingManager />
         <AIKnowledge />
