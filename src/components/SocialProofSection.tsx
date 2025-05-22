@@ -43,7 +43,7 @@ const extendedLogos = [...logos, ...logos];
 
 const SocialProofSection = () => {
   const autoplayOptions = useRef({
-    delay: 2000,
+    delay: 4000, // Increased from 2000 to 4000 to slow down the scrolling speed
     stopOnInteraction: false,
     rootNode: (emblaRoot: any) => emblaRoot.parentElement,
   });
@@ -53,7 +53,8 @@ const SocialProofSection = () => {
       loop: true,
       align: "start",
       dragFree: true,
-      containScroll: "trimSnaps"
+      containScroll: "trimSnaps",
+      speed: 5, // Added speed property to make the scrolling motion slower (lower = slower)
     },
     [Autoplay(autoplayOptions.current)]
   );
