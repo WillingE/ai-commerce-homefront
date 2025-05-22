@@ -43,12 +43,20 @@ const CaseStudy = ({
       </h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        {/* Left side - Image */}
-        <div className="order-1">
+        {/* Left side - Images */}
+        <div className="order-1 space-y-6">
           <Card className="overflow-hidden border-0 rounded-3xl shadow-xl">
             <img 
               src="/lovable-uploads/6281928c-0dbc-4934-a537-998d49e479ff.png" 
-              alt={title} 
+              alt={`${title} - Primary Image`} 
+              className="w-full h-auto object-cover aspect-[4/3]"
+            />
+          </Card>
+          
+          <Card className="overflow-hidden border-0 rounded-3xl shadow-xl">
+            <img 
+              src="/lovable-uploads/7258290f-386d-4475-b95e-27fc6b88308f.png" 
+              alt={`${title} - Secondary Image`} 
               className="w-full h-auto object-cover aspect-[4/3]"
             />
           </Card>
