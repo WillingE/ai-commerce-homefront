@@ -17,14 +17,14 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link to="/" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
-              Studio
+            <Link to="/product" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
+              Product
             </Link>
             <Link to="/" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
-              Listing Manager
+              Use Case
             </Link>
             <Link to="/" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
-              AI Knowledge
+              About
             </Link>
             <Link to="/" className="text-apple-gray-500 hover:text-apple-gray-800 px-3 py-2 text-sm font-medium">
               Pricing
@@ -84,14 +84,14 @@ const Navbar = () => {
       
       <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-          <Link to="/" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
-            Studio
+          <Link to="/product" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
+            Product
           </Link>
           <Link to="/" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
-            Listing Manager
+            Use Case
           </Link>
           <Link to="/" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
-            AI Knowledge
+            About
           </Link>
           <Link to="/" className="block px-3 py-2 text-base font-medium text-apple-gray-700 hover:text-apple-gray-900">
             Pricing
