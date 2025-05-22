@@ -66,23 +66,14 @@ const CaseStudy = ({
         {/* Right side - Content */}
         <div className="p-6 md:p-8 space-y-6">
           <div className="space-y-6">
-            {/* Secondary image in a smaller form */}
-            <div className="flex items-center gap-4">
-              <Card className="overflow-hidden border-0 rounded-xl shadow-md w-24 h-24 flex-shrink-0">
-                <img 
-                  src={secondaryImage} 
-                  alt={`${clientName} - Secondary`} 
-                  className="w-full h-full object-cover"
-                />
-              </Card>
-              <div>
-                <h3 className="text-lg font-medium text-apple-gray-800">
-                  The Challenge
-                </h3>
-                <p className="text-apple-gray-600 mt-1">
-                  {challenge}
-                </p>
-              </div>
+            {/* Challenge section */}
+            <div>
+              <h3 className="text-lg font-medium text-apple-gray-800">
+                The Challenge
+              </h3>
+              <p className="text-apple-gray-600 mt-1">
+                {challenge}
+              </p>
             </div>
           </div>
           
