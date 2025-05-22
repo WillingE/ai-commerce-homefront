@@ -55,7 +55,7 @@ const SocialProofSection = () => {
       dragFree: true,
       containScroll: "trimSnaps",
       slidesToScroll: 1,
-      duration: 50, // Control animation duration (higher = slower transition)
+      duration: 100, // Doubled from 50 to 100 to make the animation transition slower
     },
     [Autoplay(autoplayOptions.current)]
   );
