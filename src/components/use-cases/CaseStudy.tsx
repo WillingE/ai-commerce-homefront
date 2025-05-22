@@ -2,7 +2,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { cn } from "@/lib/utils";
 
 interface CaseStudyProps {
@@ -36,17 +35,6 @@ const CaseStudy = ({
   learnMoreText,
   className
 }: CaseStudyProps) => {
-  // Sample data for mini chart
-  const data = [
-    { name: 'Jan', value: 100 },
-    { name: 'Feb', value: 120 },
-    { name: 'Mar', value: 115 },
-    { name: 'Apr', value: 130 },
-    { name: 'May', value: 170 },
-    { name: 'Jun', value: 230 },
-    { name: 'Jul', value: 250 },
-  ];
-
   return (
     <Card className={cn("overflow-hidden border-0 rounded-3xl shadow-lg mb-16", className)}>
       <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -78,29 +66,6 @@ const CaseStudy = ({
         {/* Right side - Content */}
         <div className="p-6 md:p-8 space-y-6">
           <div className="space-y-6">
-            {/* Mini chart */}
-            <div className="h-32">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart
-                  data={data}
-                  margin={{ top: 5, right: 10, left: 10, bottom: 5 }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} horizontal={true} />
-                  <XAxis dataKey="name" tickLine={false} axisLine={false} />
-                  <YAxis hide={true} />
-                  <Tooltip />
-                  <Line 
-                    type="monotone" 
-                    dataKey="value" 
-                    stroke="#0071E3" 
-                    strokeWidth={3} 
-                    dot={false}
-                    activeDot={{ r: 6 }}
-                  />
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-            
             {/* Secondary image in a smaller form */}
             <div className="flex items-center gap-4">
               <Card className="overflow-hidden border-0 rounded-xl shadow-md w-24 h-24 flex-shrink-0">
