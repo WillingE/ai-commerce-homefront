@@ -1,11 +1,11 @@
 
-import { Check, Users, CircleDollarSign, Lightbulb } from "lucide-react";
+import { Check, Users, CircleDollarSign, LightBulb } from "lucide-react";
 
 const CoreValues = () => {
   const values = [
     {
       name: "创新驱动",
-      icon: <Lightbulb className="h-10 w-10 text-apple-blue" />,
+      icon: <LightBulb className="h-10 w-10 text-apple-blue" />,
       description: "我们拥抱变化，持续探索前沿AI技术，致力于为客户提供最具突破性的解决方案，引领行业发展。"
     },
     {
