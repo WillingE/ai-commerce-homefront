@@ -39,9 +39,27 @@ const CaseStudy = ({
     <Card className={cn("overflow-hidden border-0 rounded-3xl shadow-lg mb-16", className)}>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left side - Visual content */}
-        <div className="relative bg-gray-200 h-[300px] md:h-[400px] flex items-center justify-center">
-          {/* Placeholder for primary image */}
-          <p className="text-gray-500">Image will be updated</p>
+        <div className="relative bg-gray-100 flex flex-col">
+          {/* Primary image at the top */}
+          <div className="relative h-[250px] md:h-[300px]">
+            <img 
+              src={primaryImage} 
+              alt={`${clientName} - Product image 1`}
+              className="w-full h-full object-contain p-4"
+            />
+          </div>
+          
+          {/* Spacing between images */}
+          <div className="h-4"></div>
+          
+          {/* Secondary image at the bottom */}
+          <div className="relative h-[250px] md:h-[300px]">
+            <img 
+              src={secondaryImage} 
+              alt={`${clientName} - Product image 2`}
+              className="w-full h-full object-contain p-4"
+            />
+          </div>
           
           {/* Overlay with key result */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 md:p-8">
