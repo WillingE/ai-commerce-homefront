@@ -1,5 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+
 const Navbar = () => {
   const location = useLocation();
   return <header className="w-full border-b bg-white">
@@ -17,6 +19,12 @@ const Navbar = () => {
           </Link>
           <Link to="/use-cases" className={`text-base ${location.pathname === '/use-cases' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
             Use Cases
+          </Link>
+          <Link to="/about" className={`text-base ${location.pathname === '/about' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
+            About
+          </Link>
+          <Link to="/pricing" className={`text-base ${location.pathname === '/pricing' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
+            Pricing
           </Link>
         </nav>
         
