@@ -37,34 +37,24 @@ const CaseStudy = ({
 }: CaseStudyProps) => {
   return (
     <Card className={cn("overflow-hidden border-0 rounded-3xl shadow-lg mb-16", className)}>
-      {/* Header section with background */}
-      <div className="bg-apple-gray-800 p-6 md:p-8">
+      {/* Header section with refined background */}
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 py-5 px-6 md:px-8 border-b border-gray-100">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-            {/* Left side - Text header */}
+          <div className="flex flex-col space-y-2">
+            {/* Industry tag */}
             <div>
-              <div className="mb-4">
-                <span className="text-white/80 text-sm font-medium bg-white/10 px-3 py-1 rounded-full">
-                  {industry}
-                </span>
-              </div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-2">
-                {clientName}
-              </h2>
-              <p className="text-3xl md:text-4xl font-bold text-white">
-                {headline}
-              </p>
+              <span className="text-apple-blue text-sm font-medium bg-blue-50 border border-blue-100 px-3 py-1 rounded-full">
+                {industry}
+              </span>
             </div>
             
-            {/* Right side - Key challenge */}
-            <div className="hidden lg:block bg-white/10 p-5 rounded-xl">
-              <h3 className="text-lg font-medium text-white mb-2">
-                The Challenge
-              </h3>
-              <p className="text-white/90">
-                {challenge}
-              </p>
-            </div>
+            {/* Client name and headline */}
+            <h2 className="text-xl md:text-2xl font-semibold text-apple-gray-800 mb-1">
+              {clientName}
+            </h2>
+            <p className="text-2xl md:text-3xl font-bold text-apple-blue">
+              {headline}
+            </p>
           </div>
         </div>
       </div>
@@ -96,8 +86,8 @@ const CaseStudy = ({
         
         {/* Right side - Content */}
         <div className="p-6 md:p-8 space-y-6">
-          {/* Challenge section - Visible only on mobile */}
-          <div className="lg:hidden">
+          {/* Challenge section - Moved down here for both mobile and desktop */}
+          <div>
             <h3 className="text-lg font-medium text-apple-gray-800">
               The Challenge
             </h3>
