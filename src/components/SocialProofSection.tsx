@@ -31,7 +31,7 @@ const logos = [
   { 
     id: 6, 
     name: "Shopify", 
-    url: "https://via.placeholder.com/150x50" 
+    url: "/lovable-uploads/3f168a33-6e11-49b8-9856-4ad9c16f58bc.png" 
   },
 ];
 
