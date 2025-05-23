@@ -2,6 +2,9 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CoreValues from "@/components/about/CoreValues";
+import BrandStory from "@/components/about/BrandStory";
+import CoreTeam from "@/components/about/CoreTeam";
+import ContactSection from "@/components/about/ContactSection";
 
 const AboutUsPage = () => {
   return (
@@ -18,7 +21,7 @@ const AboutUsPage = () => {
         </div>
       </section>
       
-      {/* Mission & Vision Section (Placeholder) */}
+      {/* Mission & Vision Section */}
       <section className="bg-white py-20">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -40,6 +43,15 @@ const AboutUsPage = () => {
       
       {/* Core Values Section */}
       <CoreValues />
+      
+      {/* Brand Story Section */}
+      <BrandStory />
+      
+      {/* Core Team Section */}
+      <CoreTeam />
+      
+      {/* Contact Section */}
+      <ContactSection />
       
       <Footer />
     </div>
