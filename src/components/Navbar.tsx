@@ -20,6 +20,9 @@ const Navbar = () => {
           <Link to="/use-cases" className={`text-base ${location.pathname === '/use-cases' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
             Use Cases
           </Link>
+          <Link to="/pricing" className={`text-base ${location.pathname === '/pricing' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
+            Pricing
+          </Link>
           <Link to="/about" className={`text-base ${location.pathname === '/about' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
             About
           </Link>
