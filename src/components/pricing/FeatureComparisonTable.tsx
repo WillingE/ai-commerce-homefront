@@ -95,20 +95,20 @@ const FeatureComparisonTable = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="container max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-semibold text-apple-gray-800 mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-medium text-apple-gray-800 mb-10 text-center">
           Compare All Features
         </h2>
         
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto rounded-xl shadow-lg border border-apple-gray-200">
           <Table className="w-full">
             <TableHeader>
               <TableRow className="bg-apple-gray-100">
-                <TableHead className="w-1/4">Feature</TableHead>
-                <TableHead className="text-center">Starter</TableHead>
-                <TableHead className="text-center">Growth</TableHead>
-                <TableHead className="text-center">Enterprise</TableHead>
+                <TableHead className="w-1/4 py-5 text-apple-gray-800 text-base">Feature</TableHead>
+                <TableHead className="text-center py-5 text-apple-gray-800 text-base">Starter</TableHead>
+                <TableHead className="text-center py-5 text-apple-gray-800 text-base">Growth</TableHead>
+                <TableHead className="text-center py-5 text-apple-gray-800 text-base">Enterprise</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -117,14 +117,14 @@ const FeatureComparisonTable = () => {
                   <TableRow>
                     <TableCell 
                       colSpan={4} 
-                      className="bg-apple-gray-50 font-medium text-apple-gray-800"
+                      className="bg-apple-gray-50 font-medium text-apple-gray-800 py-4 text-base"
                     >
                       {group.name}
                     </TableCell>
                   </TableRow>
                   
                   {group.features.map((feature) => (
-                    <TableRow key={feature.name} className="hover:bg-apple-gray-50">
+                    <TableRow key={feature.name} className="hover:bg-apple-gray-50 transition-colors">
                       <TableCell className="py-4 font-medium">{feature.name}</TableCell>
                       <TableCell className="text-center">
                         {typeof feature.starter === "boolean" ? (

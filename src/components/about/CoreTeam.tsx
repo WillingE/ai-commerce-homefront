@@ -25,37 +25,37 @@ const teamMembers = [
 
 const CoreTeam = () => {
   return (
-    <section className="py-20 bg-apple-gray-100">
+    <section className="py-24 bg-apple-gray-100">
       <div className="container max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-medium text-apple-gray-800 text-center mb-4">
           Our Leadership
         </h2>
         
-        <p className="text-lg text-apple-gray-600 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-lg text-apple-gray-600 text-center max-w-3xl mx-auto mb-16">
           Meet the team behind Homywork's vision to transform cross-border e-commerce with AI.
         </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {teamMembers.map((member) => (
-            <Card key={member.name} className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
+            <Card key={member.name} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div className="aspect-[3/4] overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <CardContent className="pt-6">
-                <div className="flex justify-between items-start">
+              <CardContent className="pt-6 pb-8 px-8">
+                <div className="flex justify-between items-start mb-2">
                   <div>
                     <h3 className="text-xl font-medium text-apple-gray-800">{member.name}</h3>
-                    <p className="text-apple-gray-500 mb-2">{member.role}</p>
+                    <p className="text-apple-gray-500 mb-3">{member.role}</p>
                   </div>
                   <a href="#" className="text-apple-blue hover:text-opacity-80 transition-colors">
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </div>
-                <p className="text-apple-gray-600 mt-2">{member.bio}</p>
+                <p className="text-apple-gray-600">{member.bio}</p>
               </CardContent>
             </Card>
           ))}

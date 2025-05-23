@@ -31,7 +31,7 @@ const values = [
 
 const CoreValues = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-white">
       <div className="container max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-medium text-apple-gray-800 text-center mb-4">
           Our Core Values
@@ -41,13 +41,13 @@ const CoreValues = () => {
           The principles that guide everything we do at Homywork.
         </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {values.map((value) => (
-            <div key={value.title} className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 flex items-center justify-center bg-apple-blue bg-opacity-10 rounded-full mb-6">
-                <value.icon className="h-8 w-8 text-apple-blue" />
+            <div key={value.title} className="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-apple-gray-50 transition-colors">
+              <div className="w-20 h-20 flex items-center justify-center bg-apple-blue bg-opacity-10 rounded-full mb-6">
+                <value.icon className="h-9 w-9 text-apple-blue" />
               </div>
-              <h3 className="text-xl font-medium text-apple-gray-800 mb-2">{value.title}</h3>
+              <h3 className="text-xl font-medium text-apple-gray-800 mb-3">{value.title}</h3>
               <p className="text-apple-gray-600">{value.description}</p>
             </div>
           ))}

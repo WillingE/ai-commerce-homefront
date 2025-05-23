@@ -4,18 +4,18 @@ import { Button } from "@/components/ui/button";
 
 const BrandStory = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-white">
       <div className="container max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-medium text-apple-gray-800 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-medium text-apple-gray-800 text-center mb-14">
           Our Story
         </h2>
         
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             <img 
               src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
               alt="The journey of Homywork" 
-              className="rounded-2xl shadow-lg object-cover w-full h-[400px]"
+              className="rounded-3xl shadow-xl object-cover w-full h-[400px]"
             />
           </div>
           
@@ -32,7 +32,7 @@ const BrandStory = () => {
               Today, Homywork continues to innovate at the intersection of artificial intelligence and global commerce, guided by our belief that every business deserves the opportunity to succeed internationally.
             </p>
             
-            <Button className="mt-6" variant="outline">
+            <Button className="mt-8" variant="outline">
               Learn more about our journey
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
