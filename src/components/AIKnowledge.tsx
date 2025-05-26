@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 const AIKnowledge = () => {
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-purple-50">
+    <section id="ai-knowledge" className="py-32 bg-gradient-to-b from-white to-purple-50">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-3 bg-purple-100 px-5 py-3 rounded-full mb-4">

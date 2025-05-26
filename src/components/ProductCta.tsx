@@ -20,7 +20,7 @@ const ProductCta = () => {
           </Button>
           <Button 
             variant="outline" 
-            className="h-14 px-8 border-2 border-white text-white hover:bg-white/10 rounded-full text-lg font-medium transition duration-300"
+            className="h-14 px-8 bg-white text-blue-900 hover:bg-blue-50 rounded-full text-lg font-medium transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
             size="lg"
           >
             Schedule Demo

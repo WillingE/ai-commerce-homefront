@@ -20,7 +20,7 @@ const ValueProposition = () => {
           </Button>
           <Button 
             variant="outline" 
-            className="h-12 px-8 border-white text-white hover:bg-white/10 border-2"
+            className="h-12 px-8 bg-white text-blue-900 hover:bg-blue-50 shadow-lg"
             size="lg"
           >
             Contact Sales
