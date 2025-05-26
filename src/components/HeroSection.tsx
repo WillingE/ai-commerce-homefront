@@ -1,5 +1,5 @@
-
 import { Button } from "@/components/ui/button";
+import TopMain from "../../public/lovable-uploads/top-mian.avif";
 
 const HeroSection = () => {
   return (
@@ -46,7 +46,7 @@ const HeroSection = () => {
         <div className="relative w-full max-w-5xl mx-auto">
           <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
             <img 
-              src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80" 
+              src={TopMain} 
               alt="AI-powered global e-commerce platform"
               className="w-full h-auto object-cover"
             />

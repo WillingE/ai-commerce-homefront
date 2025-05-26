@@ -1,18 +1,24 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import UseCasesHeader from "@/components/use-cases/UseCasesHeader";
 import CaseStudy from "@/components/use-cases/CaseStudy";
+import SEO from "@/components/SEO";
 
 const HighlightedMetric = ({ children }: { children: React.ReactNode }) => (
-  <span className="font-bold text-apple-blue">
-    {children}
-  </span>
+  <div className="flex flex-col items-center">
+    <div className="text-4xl font-bold text-primary mb-2">{children}</div>
+  </div>
 );
 
 const UseCasesPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Homywork Use Cases - Real Success Stories"
+        description="Explore how businesses are using Homywork's AI tools to optimize their e-commerce operations and scale globally."
+        canonical="https://homywork.com/use-cases"
+        keywords="homywork use cases, homywork success stories, homywork case studies, cross-border e-commerce"
+      />
       <Navbar />
       <main className="flex-grow">
         <UseCasesHeader />

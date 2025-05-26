@@ -2,6 +2,9 @@
 import { Card } from "@/components/ui/card";
 import { Image, LayoutDashboard, MessageSquare } from 'lucide-react';
 import { Link } from "react-router-dom";
+import PerfectProductVisuals from "../../public/lovable-uploads/PerfectProductVisuals.avif";
+import SmartListingManagement from "../../public/lovable-uploads/SmartListingManagement.avif";
+import InstantAIExpertise from "../../public/lovable-uploads/InstantAIExpertise.avif";
 
 const features = [
   {
@@ -9,7 +12,7 @@ const features = [
     title: "AI Studio",
     subtitle: "Perfect Product Visuals",
     description: "Automatically enhance images and generate compelling descriptions.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80",
+    image: PerfectProductVisuals,
     alt: "AI enhancing product images",
     icon: <Image className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
     link: "/product"
@@ -19,7 +22,7 @@ const features = [
     title: "Listing Manager",
     subtitle: "Smart Listing Management",
     description: "Effortlessly sync and manage your products across all channels.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+    image: SmartListingManagement,
     alt: "Multi-platform listing management dashboard",
     icon: <LayoutDashboard className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
     link: "/product"
@@ -29,7 +32,7 @@ const features = [
     title: "AI Knowledge",
     subtitle: "Instant AI Expertise",
     description: "Get instant answers and insights from our AI-powered knowledge hub.",
-    image: "https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&q=80",
+    image: InstantAIExpertise,
     alt: "AI providing market insights and knowledge",
     icon: <MessageSquare className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
     link: "/product"
