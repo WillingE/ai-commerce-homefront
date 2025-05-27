@@ -1,14 +1,14 @@
-
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Image } from "lucide-react";
 import BeforRootbat from "../../../public/lovable-uploads/befor-rootbat.avif";
 import AfterRootbat from "../../../public/lovable-uploads/after-rootbat.avif";
+import AnimatedElement from "../AnimatedElement";
 
 const ImageFeature = () => {
   return (
     <div className="mb-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
+        <AnimatedElement animation="fade-right" duration={1000}>
           <Card className="overflow-hidden border-0 rounded-2xl shadow-lg">
             <div className="grid grid-cols-2 gap-4 p-6">
               <div>
@@ -29,8 +29,9 @@ const ImageFeature = () => {
               </div>
             </div>
           </Card>
-        </div>
-        <div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="fade-left" duration={1000} delay={200}>
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
               <Image className="h-5 w-5 text-blue-600" />
@@ -60,7 +61,7 @@ const ImageFeature = () => {
               See how image enhancement works <ArrowRight className="h-4 w-4 ml-1" />
             </a>
           </div>
-        </div>
+        </AnimatedElement>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
-
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import AnimatedElement from "./AnimatedElement";
 
 // Updated logos to use the uploaded images
 const logos = [
@@ -41,12 +41,17 @@ const logos = [
 // Duplicate logos to create a continuous scrolling effect
 const extendedLogos = [...logos, ...logos];
 
+type CarouselPlugin = Parameters<typeof useEmblaCarousel>[1][0];
+
 const SocialProofSection = () => {
-  const autoplayOptions = useRef({
+  const autoplayOptions = {
     delay: 9000, // Increased to 9000ms (9 seconds) to slow down the scrolling
     stopOnInteraction: false,
-    rootNode: (emblaRoot: any) => emblaRoot.parentElement,
-  });
+    rootNode: (emblaRoot: HTMLElement) => emblaRoot.parentElement as HTMLElement,
+  };
+  
+  // Use type assertion to fix compatibility issue
+  const autoplayPlugin = Autoplay(autoplayOptions) as unknown as CarouselPlugin;
   
   const [emblaRef] = useEmblaCarousel(
     { 
@@ -57,7 +62,7 @@ const SocialProofSection = () => {
       slidesToScroll: 1,
       duration: 100, // Doubled from 50 to 100 to make the animation transition slower
     },
-    [Autoplay(autoplayOptions.current)]
+    [autoplayPlugin]
   );
 
   return (
@@ -65,29 +70,33 @@ const SocialProofSection = () => {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex flex-col items-center">
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl text-apple-gray-600 mb-12 text-center font-light">
-            Trusted by Sellers Across Major Marketplaces
-          </h2>
+          <AnimatedElement animation="fade-up">
+            <h2 className="text-2xl md:text-3xl text-apple-gray-600 mb-12 text-center font-light">
+              Trusted by Sellers Across Major Marketplaces
+            </h2>
+          </AnimatedElement>
           
           {/* Client logos in a scrolling carousel */}
-          <div className="w-full overflow-hidden bg-white p-6 rounded-lg">
-            <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex items-center">
-                {extendedLogos.map((logo, index) => (
-                  <div 
-                    key={`${logo.id}-${index}`} 
-                    className="flex-shrink-0 flex items-center justify-center min-w-[180px] px-6"
-                  >
-                    <img
-                      src={logo.url}
-                      alt={logo.name}
-                      className="h-10 md:h-12 object-contain transition-all duration-300 hover:scale-105"
-                    />
-                  </div>
-                ))}
+          <AnimatedElement animation="fade-up" delay={200}>
+            <div className="w-full overflow-hidden bg-white p-6 rounded-lg">
+              <div className="overflow-hidden" ref={emblaRef}>
+                <div className="flex items-center">
+                  {extendedLogos.map((logo, index) => (
+                    <div 
+                      key={`${logo.id}-${index}`} 
+                      className="flex-shrink-0 flex items-center justify-center min-w-[180px] px-6"
+                    >
+                      <img
+                        src={logo.url}
+                        alt={logo.name}
+                        className="h-10 md:h-12 object-contain transition-all duration-300 hover:scale-105"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </AnimatedElement>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import TopMain from "../../public/lovable-uploads/top-mian.avif";
+import AnimatedElement from "./AnimatedElement";
 
 const HeroSection = () => {
   return (
@@ -15,44 +16,52 @@ const HeroSection = () => {
       
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl text-apple-gray-800 font-semibold mb-6 tracking-tight animate-fade-in">
-            <span>AI-Powered.</span>
-            <span className="block">Global Reach.</span>
-            <span className="block">Effortless E-commerce.</span>
-          </h1>
+          <AnimatedElement animation="fade-down" duration={1000}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl text-apple-gray-800 font-semibold mb-6 tracking-tight animate-fade-in">
+              <span>AI-Powered.</span>
+              <span className="block">Global Reach.</span>
+              <span className="block">Effortless E-commerce.</span>
+            </h1>
+          </AnimatedElement>
           
-          <p className="text-xl md:text-2xl text-apple-gray-600 mt-6 max-w-3xl mx-auto animate-slide-up">
-            Unlock intelligent product optimization, streamlined listing management, and expert AI knowledge to scale your international sales.
-          </p>
+          <AnimatedElement animation="fade-up" delay={300} duration={1000}>
+            <p className="text-xl md:text-2xl text-apple-gray-600 mt-6 max-w-3xl mx-auto animate-slide-up">
+              Unlock intelligent product optimization, streamlined listing management, and expert AI knowledge to scale your international sales.
+            </p>
+          </AnimatedElement>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-slide-up">
-            <Button 
-              className="h-14 px-8 rounded-full bg-apple-blue hover:bg-blue-600 text-white text-lg font-medium transition duration-300 ease-in-out transform hover:scale-105"
-              size="lg"
-            >
-              Try Studio Free
-            </Button>
-            <Button 
-              variant="outline" 
-              className="h-14 px-8 rounded-full border-2 border-apple-gray-400 text-apple-gray-700 hover:text-apple-gray-900 hover:border-apple-gray-800 text-lg font-medium transition duration-300 ease-in-out"
-              size="lg"
-            >
-              Explore Features
-            </Button>
-          </div>
+          <AnimatedElement animation="fade-up" delay={600} duration={1000}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-slide-up">
+              <Button 
+                className="h-14 px-8 rounded-full bg-apple-blue hover:bg-blue-600 text-white text-lg font-medium transition duration-300 ease-in-out transform hover:scale-105"
+                size="lg"
+              >
+                Try Studio Free
+              </Button>
+              <Button 
+                variant="outline" 
+                className="h-14 px-8 rounded-full border-2 border-apple-gray-400 text-apple-gray-700 hover:text-apple-gray-900 hover:border-apple-gray-800 text-lg font-medium transition duration-300 ease-in-out"
+                size="lg"
+              >
+                Explore Features
+              </Button>
+            </div>
+          </AnimatedElement>
         </div>
         
         {/* Hero image showing international e-commerce concept */}
-        <div className="relative w-full max-w-5xl mx-auto">
-          <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
-            <img 
-              src={TopMain} 
-              alt="AI-powered global e-commerce platform"
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <AnimatedElement animation="zoom-in" delay={900} duration={1200}>
+          <div className="relative w-full max-w-5xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
+              <img 
+                src={TopMain} 
+                alt="AI-powered global e-commerce platform"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
           </div>
-        </div>
+        </AnimatedElement>
       </div>
     </section>
   );
