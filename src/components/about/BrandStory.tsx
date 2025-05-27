@@ -1,6 +1,5 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ComputerUp from "../../../public/lovable-uploads/computer-up.jpg";
 import AnimatedElement from "../AnimatedElement";
 
 const BrandStory = () => {
@@ -17,7 +16,7 @@ const BrandStory = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2">
               <img
-                src={ComputerUp}
+                src="/lovable-uploads/computer-up.jpg"
                 alt="The journey of Homywork"
                 className="rounded-3xl shadow-xl object-cover w-full h-[400px]"
               />

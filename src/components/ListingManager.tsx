@@ -1,6 +1,5 @@
 import { ArrowRight, List } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import SmartListingManagement from "../../public/lovable-uploads/SmartListingManagement.avif";
 import AnimatedElement from "./AnimatedElement";
 
 const ListingManager = () => {
@@ -27,7 +26,7 @@ const ListingManager = () => {
             <div>
               <Card className="overflow-hidden border-0 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
                 <img 
-                  src={SmartListingManagement} 
+                  src="/lovable-uploads/SmartListingManagement.avif" 
                   alt="Unified Dashboard" 
                   className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
                 />

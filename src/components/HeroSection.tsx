@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import TopMain from "../../public/lovable-uploads/top-mian.avif";
 import AnimatedElement from "./AnimatedElement";
 
 const HeroSection = () => {
@@ -54,7 +53,7 @@ const HeroSection = () => {
           <div className="relative w-full max-w-5xl mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
               <img 
-                src={TopMain} 
+                src="/lovable-uploads/top-mian.avif" 
                 alt="AI-powered global e-commerce platform"
                 className="w-full h-auto object-cover"
               />

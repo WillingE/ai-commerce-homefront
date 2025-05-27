@@ -1,8 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
-import Person1 from "../../../public/lovable-uploads/person1.avif";
-import Person2 from "../../../public/lovable-uploads/person2.avif";
-import Person3 from "../../../public/lovable-uploads/person3.avif";
 import AnimatedElement from "../AnimatedElement";
 
 const teamMembers = [
@@ -10,19 +7,19 @@ const teamMembers = [
     name: "Sarah Chen",
     role: "Co-Founder & CEO",
     bio: "Previously led global expansion at a major e-commerce marketplace. Expert in cross-border trade and AI applications in commerce.",
-    image: Person1,
+    image: "/lovable-uploads/person1.avif",
   },
   {
     name: "Michael Park",
     role: "Co-Founder & CTO",
     bio: "AI researcher with experience at leading tech companies. Passionate about making machine learning accessible for businesses of all sizes.",
-    image: Person2,
+    image: "/lovable-uploads/person2.avif",
   },
   {
     name: "Elena Rodriguez",
     role: "Head of Product",
     bio: "Product leader with 10+ years experience building tools for international businesses. Focused on creating intuitive, powerful solutions.",
-    image: Person3,
+    image: "/lovable-uploads/person3.avif",
   }
 ];
 
