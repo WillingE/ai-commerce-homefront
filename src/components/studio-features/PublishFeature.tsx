@@ -1,6 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Upload } from "lucide-react";
+import PerfectProductVisuals from "../../../public/lovable-uploads/PerfectProductVisuals.avif"
 
 const PublishFeature = () => {
   return (
@@ -40,7 +41,7 @@ const PublishFeature = () => {
         <div className="order-1 lg:order-2">
           <Card className="overflow-hidden border-0 rounded-2xl shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80" 
+              src={PerfectProductVisuals} 
               alt="One-Click Publishing" 
               className="w-full h-auto object-cover"
             />

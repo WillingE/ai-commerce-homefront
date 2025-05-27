@@ -1,6 +1,7 @@
 
 import { ArrowRight, Database } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import InstantAIExpertise from "../../public/lovable-uploads/InstantAIExpertise.avif";
 
 const AIKnowledge = () => {
   return (
@@ -47,7 +48,7 @@ const AIKnowledge = () => {
           <div className="order-1 lg:order-2">
             <Card className="overflow-hidden border-0 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
               <img 
-                src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&q=80" 
+                src={InstantAIExpertise} 
                 alt="AI Knowledge Interface" 
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
               />

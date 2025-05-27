@@ -1,6 +1,7 @@
 
 import { ArrowRight, List } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import SmartListingManagement from "../../public/lovable-uploads/SmartListingManagement.avif";
 
 const ListingManager = () => {
   return (
@@ -23,7 +24,7 @@ const ListingManager = () => {
           <div>
             <Card className="overflow-hidden border-0 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
+                src={SmartListingManagement} 
                 alt="Unified Dashboard" 
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
               />

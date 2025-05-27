@@ -64,7 +64,7 @@ const PricingPlans = () => {
               } shadow-sm hover:shadow-lg transition-shadow duration-300`}
             >
               {plan.popular && (
-                <div className="bg-blue-500 text-white py-1 px-3 text-sm font-medium text-center">
+                <div className="bg-blue-500 text-white py-1 px-3 text-sm font-medium text-center rounded-t-md">
                   Most Popular
                 </div>
               )}

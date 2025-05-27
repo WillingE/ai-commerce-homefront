@@ -1,6 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ComputerUp from "../../../public/lovable-uploads/computer-up.jpg";
 
 const BrandStory = () => {
   return (
@@ -13,7 +14,7 @@ const BrandStory = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             <img 
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+              src={ComputerUp} 
               alt="The journey of Homywork" 
               className="rounded-3xl shadow-xl object-cover w-full h-[400px]"
             />

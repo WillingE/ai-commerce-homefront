@@ -1,6 +1,8 @@
 
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Image } from "lucide-react";
+import BeforRootbat from "../../../public/lovable-uploads/befor-rootbat.avif";
+import AfterRootbat from "../../../public/lovable-uploads/after-rootbat.avif";
 
 const ImageFeature = () => {
   return (
@@ -12,7 +14,7 @@ const ImageFeature = () => {
               <div>
                 <p className="text-center text-sm font-medium text-apple-gray-500 mb-2">Before</p>
                 <img 
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80" 
+                  src={BeforRootbat} 
                   alt="Before AI Image Enhancement" 
                   className="w-full h-auto rounded-lg"
                 />
@@ -20,7 +22,7 @@ const ImageFeature = () => {
               <div>
                 <p className="text-center text-sm font-medium text-apple-gray-500 mb-2">After</p>
                 <img 
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=90&w=400&h=400&auto=enhance" 
+                  src={AfterRootbat} 
                   alt="After AI Image Enhancement" 
                   className="w-full h-auto rounded-lg"
                 />

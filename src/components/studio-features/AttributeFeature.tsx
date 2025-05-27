@@ -1,6 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Tag } from "lucide-react";
+import CodeImg from "../../../public/lovable-uploads/code-img.avif"
 
 const AttributeFeature = () => {
   return (
@@ -9,7 +10,7 @@ const AttributeFeature = () => {
         <div>
           <Card className="overflow-hidden border-0 rounded-2xl shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80" 
+              src={CodeImg} 
               alt="AI Attribute Management" 
               className="w-full h-auto object-cover"
             />
