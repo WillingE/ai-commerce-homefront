@@ -9,7 +9,7 @@ const AttributeFeature = () => {
         <div>
           <Card className="overflow-hidden border-0 rounded-2xl shadow-lg">
             <img 
-              src="/lovable-uploads/code-img.avif" 
+              src="/lovable-uploads/SmartAttributeMapping.png" 
               alt="AI Attribute Management" 
               className="w-full h-auto object-cover"
             />

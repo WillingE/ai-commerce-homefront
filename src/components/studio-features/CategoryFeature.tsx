@@ -41,7 +41,7 @@ const CategoryFeature = () => {
         <div className="order-1 lg:order-2">
           <Card className="overflow-hidden border-0 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
             <img 
-              src="/lovable-uploads/4be604be-1cfc-435a-8509-cdc400c67895.png" 
+              src="/lovable-uploads/StudioCategory.png" 
               alt="Woman cooking in a bright kitchen" 
               className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
             />

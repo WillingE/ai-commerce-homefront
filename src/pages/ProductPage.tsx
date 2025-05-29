@@ -6,6 +6,7 @@ import ListingManager from "@/components/ListingManager";
 import AIKnowledge from "@/components/AIKnowledge";
 import ProductCta from "@/components/ProductCta";
 import SEO from "@/components/SEO";
+// import ImageCompareDemo from "@/components/ImageCompareDemo";
 
 const ProductPage = () => {
   return (
@@ -21,6 +22,7 @@ const ProductPage = () => {
       <main className="flex-grow">
         <ProductHero />
         <StudioFeatures />
+        {/* <ImageCompareDemo /> */}
         <ListingManager />
         <AIKnowledge />
         <ProductCta />

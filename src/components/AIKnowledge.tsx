@@ -50,7 +50,7 @@ const AIKnowledge = () => {
           <AnimatedElement animation="fade-left" duration={1000} delay={200} className="order-1 lg:order-2">
             <Card className="overflow-hidden border-0 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
               <img 
-                src="/lovable-uploads/InstantAIExpertise.avif"
+                src="/lovable-uploads/InstantAIExpertise.png"
                 alt="AI Knowledge Interface" 
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
               />

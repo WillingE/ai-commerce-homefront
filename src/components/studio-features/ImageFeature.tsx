@@ -12,7 +12,7 @@ const ImageFeature = () => {
               <div>
                 <p className="text-center text-sm font-medium text-apple-gray-500 mb-2">Before</p>
                 <img 
-                  src="/lovable-uploads/befor-rootbat.avif" 
+                  src="/lovable-uploads/before.png" 
                   alt="Before AI Image Enhancement" 
                   className="w-full h-auto rounded-lg"
                 />
@@ -20,7 +20,7 @@ const ImageFeature = () => {
               <div>
                 <p className="text-center text-sm font-medium text-apple-gray-500 mb-2">After</p>
                 <img 
-                  src="/lovable-uploads/after-rootbat.avif" 
+                  src="/lovable-uploads/after.jpg" 
                   alt="After AI Image Enhancement" 
                   className="w-full h-auto rounded-lg"
                 />

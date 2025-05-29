@@ -53,7 +53,7 @@ const HeroSection = () => {
           <div className="relative w-full max-w-5xl mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
               <img 
-                src="/lovable-uploads/top-mian.avif" 
+                src="/lovable-uploads/top-main.png" 
                 alt="AI-powered global e-commerce platform"
                 className="w-full h-auto object-cover"
               />

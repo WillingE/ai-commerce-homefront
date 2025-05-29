@@ -40,7 +40,7 @@ const PublishFeature = () => {
         <div className="order-1 lg:order-2">
           <Card className="overflow-hidden border-0 rounded-2xl shadow-lg">
             <img 
-              src="/lovable-uploads/PerfectProductVisuals.avif" 
+              src="/lovable-uploads/PerfectProductVisuals.png" 
               alt="One-Click Publishing" 
               className="w-full h-auto object-cover"
             />
