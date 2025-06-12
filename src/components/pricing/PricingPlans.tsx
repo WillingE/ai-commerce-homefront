@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -11,10 +12,12 @@ const PricingPlans = () => {
       period: "/month",
       description: "Perfect for small businesses exploring global markets",
       features: [
-        "Access to AI Listing Creator",
-        "3 supported languages",
-        "100 AI translations per month",
-        "Basic analytics",
+        "AI Listing Creator",
+        "100 AI-enhanced images per month",
+        "3 supported languages for translations",
+        "5 marketplace integrations",
+        "Basic analytics dashboard",
+        "Email support",
       ],
       cta: "Start Free Trial",
       popular: false,
@@ -26,10 +29,13 @@ const PricingPlans = () => {
       description: "For businesses ready to scale their global presence",
       features: [
         "Everything in Starter",
-        "15 supported languages",
-        "500 AI translations per month",
-        "Advanced analytics dashboard",
-        "Priority support",
+        "500 AI-enhanced images per month",
+        "15 supported languages for translations",
+        "15 marketplace integrations",
+        "Advanced analytics & reporting",
+        "Bulk listing management",
+        "Priority chat support",
+        "API access (limited)",
       ],
       cta: "Start Free Trial",
       popular: true,
@@ -41,10 +47,13 @@ const PricingPlans = () => {
       description: "For large-scale global operations and custom needs",
       features: [
         "Everything in Growth",
-        "Unlimited languages",
-        "Unlimited AI translations",
+        "Unlimited AI-enhanced images",
+        "All supported languages",
+        "Unlimited marketplace integrations",
+        "Custom AI model training",
         "Dedicated account manager",
-        "API access & custom integrations",
+        "24/7 priority support",
+        "Full API access & custom integrations",
         "Enterprise SLA",
       ],
       cta: "Contact Sales",

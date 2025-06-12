@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Check, Minus } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -6,7 +7,7 @@ import AnimatedElement from "../AnimatedElement";
 const FeatureComparisonTable = () => {
   const featureGroups = [
     {
-      name: "Studio Features",
+      name: "AI Studio Features",
       features: [
         {
           name: "AI Listing Creator",
@@ -15,21 +16,27 @@ const FeatureComparisonTable = () => {
           enterprise: true,
         },
         {
-          name: "Smart Image Optimization",
+          name: "AI-Enhanced Images",
           starter: "100/month",
           growth: "500/month",
           enterprise: "Unlimited",
         },
         {
-          name: "AI Content Enhancement",
-          starter: false,
+          name: "Smart Image Optimization",
+          starter: true,
           growth: true,
           enterprise: true,
         },
         {
-          name: "Multilingual SEO",
-          starter: false,
+          name: "Background Removal",
+          starter: true,
           growth: true,
+          enterprise: true,
+        },
+        {
+          name: "Custom AI Model Training",
+          starter: false,
+          growth: false,
           enterprise: true,
         },
       ],
@@ -38,9 +45,9 @@ const FeatureComparisonTable = () => {
       name: "Listing Manager",
       features: [
         {
-          name: "Cross-Border Listings",
-          starter: "5 markets",
-          growth: "15 markets",
+          name: "Marketplace Integrations",
+          starter: "5 platforms",
+          growth: "15 platforms",
           enterprise: "Unlimited",
         },
         {
@@ -50,13 +57,19 @@ const FeatureComparisonTable = () => {
           enterprise: "All languages",
         },
         {
-          name: "Bulk Editing",
+          name: "Bulk Listing Management",
           starter: false,
           growth: true,
           enterprise: true,
         },
         {
-          name: "Custom Fields",
+          name: "Cross-Border Optimization",
+          starter: "Basic",
+          growth: "Advanced",
+          enterprise: "Enterprise",
+        },
+        {
+          name: "Custom Fields & Attributes",
           starter: false,
           growth: "Up to 10",
           enterprise: "Unlimited",
@@ -64,19 +77,31 @@ const FeatureComparisonTable = () => {
       ],
     },
     {
-      name: "Support & Integration",
+      name: "Analytics & Support",
       features: [
+        {
+          name: "Analytics Dashboard",
+          starter: "Basic",
+          growth: "Advanced",
+          enterprise: "Enterprise",
+        },
+        {
+          name: "Performance Reports",
+          starter: false,
+          growth: true,
+          enterprise: true,
+        },
         {
           name: "Email Support",
           starter: "48h response",
           growth: "24h response",
-          enterprise: "Dedicated",
+          enterprise: "24/7 priority",
         },
         {
           name: "Chat Support",
           starter: false,
-          growth: true,
-          enterprise: true,
+          growth: "Priority",
+          enterprise: "Dedicated",
         },
         {
           name: "API Access",
@@ -85,10 +110,10 @@ const FeatureComparisonTable = () => {
           enterprise: "Full access",
         },
         {
-          name: "Marketplace Integrations",
-          starter: "2",
-          growth: "10",
-          enterprise: "All available",
+          name: "Account Manager",
+          starter: false,
+          growth: false,
+          enterprise: "Dedicated",
         },
       ],
     },
