@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import UseCasesHeader from "@/components/use-cases/UseCasesHeader";
@@ -7,6 +8,12 @@ import AnimatedElement from "@/components/AnimatedElement";
 
 const HighlightedMetric = ({ children }: { children: React.ReactNode }) => (
   <span className="text-1xl font-bold text-blue-500 inline-block">
+    {children}
+  </span>
+);
+
+const CompanyDescription = ({ children }: { children: React.ReactNode }) => (
+  <span className="text-gray-600 font-medium">
     {children}
   </span>
 );
@@ -27,64 +34,74 @@ const UseCasesPage = () => {
           <div className="container max-w-7xl mx-auto px-4 py-16 md:py-24">
             <AnimatedElement animation="fade-up" delay={0} duration={800}>
               <CaseStudy 
-                headline="+150% Sales Growth in 30 Days"
-                clientName="Artisan Gems"
-                industry="Furniture"
+                headline={
+                  <>
+                    35% Sales Growth - <CompanyDescription>a 30-year established american home goods retailer</CompanyDescription>
+                  </>
+                }
+                clientName="Heritage Home Co."
+                industry="Home & Garden E-commerce"
                 primaryImage="/lovable-uploads/328328eb-cdb0-4de6-b738-70ea44db5315.png"
                 secondaryImage="/lovable-uploads/1bd9f347-beb2-4d11-8231-753e9de4054c.png"
-                challenge="Manual listing across 5 international platforms consumed over 20 hours weekly with inconsistent results."
-                solution="Our AI Studio automated image optimization and multi-language descriptions, while Listing Manager enabled one-click publishing across all marketplaces."
+                challenge="This established home goods retailer was struggling with declining online sales due to poor product presentation and inconsistent listings across multiple e-commerce platforms, making it difficult to compete with larger retailers."
+                solution="We implemented our AI-powered listing optimization and image enhancement tools to create professional, consistent product presentations across all their sales channels, improving product visibility and customer engagement."
                 detailedResults={
                   <p>
-                    Within the first month, Artisan Gems saw a <HighlightedMetric>150%</HighlightedMetric> increase in global sales, <HighlightedMetric>50%</HighlightedMetric> reduction in listing creation time, and <HighlightedMetric>32%</HighlightedMetric> improvement in search visibility.
+                    Heritage Home Co. achieved a remarkable <HighlightedMetric>35%</HighlightedMetric> increase in overall online sales within 3 months, with conversion rates improving by <HighlightedMetric>28%</HighlightedMetric> and average order value rising by <HighlightedMetric>18%</HighlightedMetric> due to better product presentation and optimized listings.
                   </p>
                 }
-                quote="This AI platform transformed our international sales strategy. We're reaching more customers than ever before!"
-                quoteAuthor="Jane Doe, Founder of Artisan Gems"
+                quote="Our sales transformation has been incredible. The AI-optimized listings and images have made our products much more appealing to customers, directly translating to higher sales."
+                quoteAuthor="Jennifer Martinez, E-commerce Director"
                 learnMoreLink="#"
                 learnMoreText="See how Homywork helped"
               />
             </AnimatedElement>
             
-            {/* Updated case study with first uploaded image */}
             <AnimatedElement animation="fade-up" delay={300} duration={800}>
               <CaseStudy 
-                headline="Custom Furniture Orders Up 85%"
-                clientName="Nordic Designs"
-                industry="Furniture"
+                headline={
+                  <>
+                    80% Cost Reduction - <CompanyDescription>a growing european online fashion boutique</CompanyDescription>
+                  </>
+                }
+                clientName="StyleCraft Boutique"
+                industry="Fashion E-commerce"
                 primaryImage="/lovable-uploads/09c7c9b6-558f-472c-adc8-8bbe8e3c1568.png"
                 secondaryImage=""
-                challenge="Struggling to manage custom furniture orders with complex specifications and long lead times, resulting in customer dissatisfaction."
-                solution="Our AI platform streamlined order processing with automated measurements interpretation and material recommendations, while providing real-time production tracking."
+                challenge="This expanding fashion retailer was spending thousands of euros monthly on professional photography shoots and graphic design services, with each product requiring 2-3 hours of image editing work, severely limiting their ability to launch new collections quickly."
+                solution="Our AI Studio completely transformed their image workflow by automatically enhancing product photos, removing backgrounds, and creating professional-quality visuals in minutes instead of hours, eliminating the need for expensive photography services."
                 detailedResults={
                   <p>
-                    After implementation, Nordic Designs experienced an <HighlightedMetric>85%</HighlightedMetric> increase in custom orders, <HighlightedMetric>40%</HighlightedMetric> reduction in production errors, and <HighlightedMetric>28%</HighlightedMetric> faster delivery times.
+                    StyleCraft Boutique reduced their monthly image production costs by <HighlightedMetric>80%</HighlightedMetric>, cutting image processing time from <HighlightedMetric>3 hours to 15 minutes</HighlightedMetric> per product, and increased their new product launch frequency by <HighlightedMetric>150%</HighlightedMetric> due to streamlined image workflows.
                   </p>
                 }
-                quote="The AI platform has revolutionized how we handle custom furniture orders. Our customers love the transparency and accuracy."
-                quoteAuthor="Erik Johansson, CEO of Nordic Designs"
+                quote="The cost savings have been game-changing for our business. We've eliminated our photography budget entirely while actually improving our image quality and speed."
+                quoteAuthor="Alessandro Rossi, Founder"
                 learnMoreLink="#"
                 learnMoreText="See how Homywork helped"
               />
             </AnimatedElement>
             
-            {/* Updated case study with second uploaded image */}
             <AnimatedElement animation="fade-up" delay={600} duration={800}>
               <CaseStudy 
-                headline="Inventory Costs Reduced by 34%"
-                clientName="Urban Living Furniture"
-                industry="Furniture"
+                headline={
+                  <>
+                    5x Listing Speed - <CompanyDescription>a fast-growing online electronics retailer</CompanyDescription>
+                  </>
+                }
+                clientName="TechMart Direct"
+                industry="Electronics E-commerce"
                 primaryImage="/lovable-uploads/b232ee87-5bf4-4694-bf8b-8b96f014346c.png"
                 secondaryImage=""
-                challenge="Inefficient inventory management led to overstocking of slow-moving items and stockouts of popular products, causing financial strain."
-                solution="Our AI-powered inventory forecasting system analyzed sales patterns, seasonal trends, and market data to optimize stock levels across all product categories."
+                challenge="This rapidly expanding electronics retailer was overwhelmed by the manual process of creating product listings across multiple platforms, with each listing taking 2-3 hours to complete and often containing inconsistencies that hurt their search rankings and sales performance."
+                solution="We deployed our automated Listing Manager to streamline their entire product listing workflow, automatically generating optimized titles, descriptions, and specifications for multiple e-commerce platforms simultaneously, ensuring consistency and SEO optimization."
                 detailedResults={
                   <p>
-                    Within just three months, Urban Living achieved a <HighlightedMetric>34%</HighlightedMetric> reduction in inventory costs, <HighlightedMetric>65%</HighlightedMetric> fewer stockouts, and <HighlightedMetric>22%</HighlightedMetric> improvement in cash flow.
+                    TechMart Direct increased their listing creation speed by <HighlightedMetric>400%</HighlightedMetric>, reducing time per listing from <HighlightedMetric>3 hours to 35 minutes</HighlightedMetric>, and improved their search ranking visibility by <HighlightedMetric>45%</HighlightedMetric> through consistent, SEO-optimized product descriptions across all platforms.
                   </p>
                 }
-                quote="The precision of the AI forecasting has transformed our business model. We're now more agile and financially healthier than ever before."
-                quoteAuthor="Maria Chen, Operations Director at Urban Living"
+                quote="We can now list products 5 times faster with better quality and consistency. Our team can focus on sourcing and customer service instead of repetitive listing work."
+                quoteAuthor="David Kim, Operations Manager"
                 learnMoreLink="#"
                 learnMoreText="See how Homywork helped"
               />

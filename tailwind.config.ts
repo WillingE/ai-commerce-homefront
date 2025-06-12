@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -86,6 +85,7 @@ export default {
 			fontFamily: {
 				'sf-pro-display': ['SF Pro Display', 'system-ui', 'sans-serif'],
 				'sf-pro-text': ['SF Pro Text', 'system-ui', 'sans-serif'],
+				'handwriting': ['Kalam', 'cursive', 'system-ui', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {

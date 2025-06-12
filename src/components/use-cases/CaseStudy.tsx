@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -6,7 +7,7 @@ import { ReactNode } from "react";
 import AnimatedElement from "../AnimatedElement";
 
 interface CaseStudyProps {
-  headline: string;
+  headline: ReactNode;
   clientName: string;
   industry: string;
   primaryImage: string;
