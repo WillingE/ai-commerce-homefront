@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Check, Minus } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -96,18 +95,6 @@ const FeatureComparisonTable = () => {
           starter: "48h response",
           growth: "24h response",
           enterprise: "24/7 priority",
-        },
-        {
-          name: "Chat Support",
-          starter: false,
-          growth: "Priority",
-          enterprise: "Dedicated",
-        },
-        {
-          name: "API Access",
-          starter: false,
-          growth: "Limited",
-          enterprise: "Full access",
         },
         {
           name: "Account Manager",

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -34,8 +33,6 @@ const PricingPlans = () => {
         "15 marketplace integrations",
         "Advanced analytics & reporting",
         "Bulk listing management",
-        "Priority chat support",
-        "API access (limited)",
       ],
       cta: "Start Free Trial",
       popular: true,
