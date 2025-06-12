@@ -13,7 +13,7 @@ const HighlightedMetric = ({ children }: { children: React.ReactNode }) => (
 );
 
 const CompanyDescription = ({ children }: { children: React.ReactNode }) => (
-  <span className="font-handwriting text-blue-600 font-medium">
+  <span className="text-gray-600 font-medium">
     {children}
   </span>
 );
@@ -36,7 +36,7 @@ const UseCasesPage = () => {
               <CaseStudy 
                 headline={
                   <>
-                    35% Sales Growth - <CompanyDescription>A well-established American home goods retailer</CompanyDescription>
+                    35% Sales Growth - <CompanyDescription>a 30-year established american home goods retailer</CompanyDescription>
                   </>
                 }
                 clientName="Heritage Home Co."
@@ -61,7 +61,7 @@ const UseCasesPage = () => {
               <CaseStudy 
                 headline={
                   <>
-                    50% Cost Reduction - <CompanyDescription>A growing European online fashion boutique</CompanyDescription>
+                    50% Cost Reduction - <CompanyDescription>a growing european online fashion boutique</CompanyDescription>
                   </>
                 }
                 clientName="StyleCraft Boutique"
@@ -86,7 +86,7 @@ const UseCasesPage = () => {
               <CaseStudy 
                 headline={
                   <>
-                    3x Listing Efficiency - <CompanyDescription>A fast-growing online electronics retailer</CompanyDescription>
+                    3x Listing Efficiency - <CompanyDescription>a fast-growing online electronics retailer</CompanyDescription>
                   </>
                 }
                 clientName="TechMart Direct"
