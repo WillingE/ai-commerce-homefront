@@ -14,7 +14,7 @@ const features = [
     beforeImage: "/lovable-uploads/before.png",
     afterImage: "/lovable-uploads/after.jpg",
     alt: "AI enhancing product images",
-    icon: <Image className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
+    // icon: <Image className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
     link: "/product"
   },
   {
@@ -24,7 +24,7 @@ const features = [
     description: "Effortlessly sync and manage your products across all channels.",
     image: "/lovable-uploads/SmartListingManagement1.png",
     alt: "Multi-platform listing management dashboard",
-    icon: <LayoutDashboard className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
+    // icon: <LayoutDashboard className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
     link: "/product"
   },
   {
@@ -34,7 +34,7 @@ const features = [
     description: "Get instant answers and insights from our AI-powered knowledge hub.",
     image: "/lovable-uploads/InstantAIExpertise.png",
     alt: "AI providing market insights and knowledge",
-    icon: <MessageSquare className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
+    // icon: <MessageSquare className="h-10 w-10 text-apple-blue" strokeWidth={1.5} />,
     link: "/product"
   }
 ];
@@ -69,7 +69,7 @@ const FeaturesSection = () => {
                   <div className="relative h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-transparent z-10"></div>
                     <div className="absolute top-4 left-4 z-20">
-                      {feature.icon}
+                      {/* {feature.icon} */}
                     </div>
                     {feature.id === 1 ? (
                       <ImageCompare

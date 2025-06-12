@@ -17,8 +17,8 @@ const Navbar = () => {
           <Link to="/product" className={`text-base ${location.pathname === '/product' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
             Product
           </Link>
-          <Link to="/use-cases" className={`text-base ${location.pathname === '/use-cases' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
-            Use Cases
+          <Link to="/case-study" className={`text-base ${location.pathname === '/case-study' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
+            Case Study
           </Link>
           <Link to="/pricing" className={`text-base ${location.pathname === '/pricing' ? 'text-apple-blue font-medium' : 'text-apple-gray-600'}`}>
             Pricing
@@ -30,7 +30,7 @@ const Navbar = () => {
         
         <div className="flex items-center space-x-4">
           <Button variant="outline" className="hidden md:inline-flex">
-            <Link to="/PublishLogin">Login</Link>
+            <a href="/publishLogin">Login</a>
           </Button>
           <Button>Get Started</Button>
         </div>

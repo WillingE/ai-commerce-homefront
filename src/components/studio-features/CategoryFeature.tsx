@@ -32,10 +32,10 @@ const CategoryFeature = () => {
                 <span className="text-lg">Reduced listing errors and compliance issues</span>
               </li>
             </ul>
-            <a href="#" className="inline-flex items-center text-lg text-blue-600 hover:text-blue-800 font-medium group">
+            {/* <a href="#" className="inline-flex items-center text-lg text-blue-600 hover:text-blue-800 font-medium group">
               Learn more about AI categorization 
               <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="order-1 lg:order-2">

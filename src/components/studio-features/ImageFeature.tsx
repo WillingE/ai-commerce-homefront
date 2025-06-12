@@ -55,9 +55,9 @@ const ImageFeature = () => {
                 <span>Increased click-through rates with professional imagery</span>
               </li>
             </ul>
-            <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+            {/* <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
               See how image enhancement works <ArrowRight className="h-4 w-4 ml-1" />
-            </a>
+            </a> */}
           </div>
         </AnimatedElement>
       </div>

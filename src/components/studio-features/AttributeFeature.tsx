@@ -41,9 +41,9 @@ const AttributeFeature = () => {
                 <span>Enhanced search relevance with optimized attributes</span>
               </li>
             </ul>
-            <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+            {/* <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
               Learn about attribute optimization <ArrowRight className="h-4 w-4 ml-1" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

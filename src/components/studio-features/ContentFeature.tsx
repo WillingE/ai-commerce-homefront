@@ -32,9 +32,9 @@ const ContentFeature = () => {
                 <span>Persuasive descriptions that highlight key benefits</span>
               </li>
             </ul>
-            <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+            {/* <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
               Explore content generation <ArrowRight className="h-4 w-4 ml-1" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="order-1 lg:order-2">

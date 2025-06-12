@@ -69,9 +69,9 @@ const ListingManager = () => {
               <p className="text-lg text-apple-gray-600 mb-6">
                 AI-driven pricing strategies optimize your margins while staying competitive in each marketplace.
               </p>
-              <a href="#" className="inline-flex items-center text-lg text-green-600 hover:text-green-800 font-medium mt-auto group">
+              {/* <a href="#" className="inline-flex items-center text-lg text-green-600 hover:text-green-800 font-medium mt-auto group">
                 Learn more <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </a> */}
             </Card>
           </AnimatedElement>
           
@@ -81,9 +81,9 @@ const ListingManager = () => {
               <p className="text-lg text-apple-gray-600 mb-6">
                 Streamline your operations with intelligent routing, shipping label generation, and tracking updates.
               </p>
-              <a href="#" className="inline-flex items-center text-lg text-green-600 hover:text-green-800 font-medium mt-auto group">
+              {/* <a href="#" className="inline-flex items-center text-lg text-green-600 hover:text-green-800 font-medium mt-auto group">
                 Learn more <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </a> */}
             </Card>
           </AnimatedElement>
           
@@ -93,9 +93,9 @@ const ListingManager = () => {
               <p className="text-lg text-apple-gray-600 mb-6">
                 Gain actionable insights with detailed reports on sales, traffic, conversion rates, and growth opportunities.
               </p>
-              <a href="#" className="inline-flex items-center text-lg text-green-600 hover:text-green-800 font-medium mt-auto group">
+              {/* <a href="#" className="inline-flex items-center text-lg text-green-600 hover:text-green-800 font-medium mt-auto group">
                 Learn more <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </a> */}
             </Card>
           </AnimatedElement>
         </div>

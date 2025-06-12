@@ -65,9 +65,9 @@ const AIKnowledge = () => {
               <p className="text-lg text-apple-gray-600 mb-6">
                 Stay compliant across borders with AI that monitors and implements country-specific regulations and requirements.
               </p>
-              <a href="#" className="inline-flex items-center text-lg text-purple-600 hover:text-purple-800 font-medium mt-auto group">
+              {/* <a href="#" className="inline-flex items-center text-lg text-purple-600 hover:text-purple-800 font-medium mt-auto group">
                 Learn more <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </a> */}
             </Card>
           </AnimatedElement>
           
@@ -77,9 +77,9 @@ const AIKnowledge = () => {
               <p className="text-lg text-apple-gray-600 mb-6">
                 Receive market-specific guidance on cultural preferences, payment methods, and shopping behaviors to optimize your approach.
               </p>
-              <a href="#" className="inline-flex items-center text-lg text-purple-600 hover:text-purple-800 font-medium mt-auto group">
+              {/* <a href="#" className="inline-flex items-center text-lg text-purple-600 hover:text-purple-800 font-medium mt-auto group">
                 Learn more <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </a> */}
             </Card>
           </AnimatedElement>
           
@@ -89,9 +89,9 @@ const AIKnowledge = () => {
               <p className="text-lg text-apple-gray-600 mb-6">
                 Ask questions and receive expert guidance on any aspect of global e-commerce with our conversational AI assistant.
               </p>
-              <a href="#" className="inline-flex items-center text-lg text-purple-600 hover:text-purple-800 font-medium mt-auto group">
+              {/* <a href="#" className="inline-flex items-center text-lg text-purple-600 hover:text-purple-800 font-medium mt-auto group">
                 Learn more <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </a> */}
             </Card>
           </AnimatedElement>
         </div>

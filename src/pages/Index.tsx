@@ -16,7 +16,7 @@ const Index = () => {
         canonical="https://homywork.com/"
       />
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow overflow-hidden">
         <HeroSection />
         <FeaturesSection />
         <BenefitsSection />

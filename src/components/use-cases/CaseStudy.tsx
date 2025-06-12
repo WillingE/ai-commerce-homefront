@@ -131,7 +131,7 @@ const CaseStudy = ({
             )}
             
             {/* Learn More Link */}
-            {learnMoreLink && (
+            {/* {learnMoreLink && (
               <AnimatedElement animation="fade-up" delay={1000} duration={800}>
                 <div className="mt-4">
                   <Button variant="link" className="p-0 h-auto text-apple-blue" asChild>
@@ -141,7 +141,7 @@ const CaseStudy = ({
                   </Button>
                 </div>
               </AnimatedElement>
-            )}
+            )} */}
           </div>
         </AnimatedElement>
       </div>
