@@ -9,23 +9,23 @@ import AnimatedElement from "../AnimatedElement";
 const values = [
   {
     icon: Lightbulb,
-    title: "Innovation",
-    description: "We constantly push the boundaries of what's possible with AI in e-commerce."
+    title: "Chat-Native, Decision-First",
+    description: "You don't need dashboards and tabs. You ask. Homywork answers—with actions:\n\"Why did traffic drop yesterday?\"\n\"What category performs best this week?\"\n\"Change the background to a Scandinavian minimalistic bedroom.\""
   },
   {
     icon: Globe,
-    title: "Global Perspective",
-    description: "We embrace diverse markets and cultures, considering global implications in everything we build."
+    title: "Always Learning, Always Managing",
+    description: "Every edit, every sale, every click trains our system. Over time, it understands your tone, product style, and pricing logic—and manages accordingly."
   },
   {
     icon: Users,
-    title: "Customer Success",
-    description: "We measure our success by the success of the businesses we serve."
+    title: "Full Operational Coverage",
+    description: "Image Generation. Inventory adjustments. SEO tuning. Pricing tests. Cross-platform consistency. All handled automatically or through one unified interface."
   },
   {
     icon: Shield,
-    title: "Trust & Quality",
-    description: "We deliver reliable, accurate tools that businesses can depend on for their global growth."
+    title: "Built for Ecommerce Sellers",
+    description: "Optimized for complex SKUs with detailed specs, variant images, and size constraints. Homywork knows the difference between a nursery shelf and a warehouse rack, and adjusts accordingly."
   }
 ];
 
@@ -35,7 +35,7 @@ const CoreValues = () => {
       <div className="container max-w-7xl mx-auto px-4">
         <AnimatedElement animation="fade-down" duration={800}>
           <h2 className="text-3xl md:text-4xl font-medium text-apple-gray-800 text-center mb-4">
-            Our Core Values
+            Our Core Value Prop
           </h2>
         </AnimatedElement>
         
@@ -48,12 +48,12 @@ const CoreValues = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {values.map((value, index) => (
             <AnimatedElement key={value.title} animation="fade-up" delay={300 + (index * 150)} duration={800}>
-              <div className="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-apple-gray-50 transition-colors">
+              <div className="flex flex-col items-center p-6 rounded-2xl hover:bg-apple-gray-50 transition-colors">
                 <div className="w-20 h-20 flex items-center justify-center bg-apple-blue bg-opacity-10 rounded-full mb-6">
                   <value.icon className="h-9 w-9 text-apple-blue" />
                 </div>
-                <h3 className="text-xl font-medium text-apple-gray-800 mb-3">{value.title}</h3>
-                <p className="text-apple-gray-600">{value.description}</p>
+                <h3 className="text-xl font-medium text-apple-gray-800 mb-4">{value.title}</h3>
+                <p className="text-apple-gray-600 whitespace-pre-line">{value.description}</p>
               </div>
             </AnimatedElement>
           ))}

@@ -13,7 +13,7 @@ const ProductHero = () => {
         
         <AnimatedElement animation="fade-up" delay={300} duration={1000}>
           <p className="text-xl md:text-2xl text-apple-gray-600 mb-10 max-w-3xl mx-auto">
-            Discover how our suite of intelligent tools transforms cross-border e-commerce with innovative AI solutions.
+          Unlock seamless e-commerce efficiency with our AI tools – analyze data smarter, list products in clicks, manage inventory effortlessly – try it free now and revolutionize your online store!
           </p>
         </AnimatedElement>
         

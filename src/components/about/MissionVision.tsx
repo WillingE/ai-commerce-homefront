@@ -9,7 +9,7 @@ const MissionVision = () => {
             <div className="bg-white p-12 rounded-2xl shadow-sm">
               <h2 className="text-3xl font-medium text-apple-gray-800 mb-6">Our Mission</h2>
               <p className="text-lg text-apple-gray-600">
-                To empower businesses of all sizes to succeed globally by breaking down language, cultural, and technical barriers in cross-border e-commerce.
+                To automate the thousands of small but critical decisions that e-commerce sellers make every day—so they can scale without burning out.
               </p>
             </div>
           </AnimatedElement>

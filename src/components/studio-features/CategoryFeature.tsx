@@ -16,7 +16,7 @@ const CategoryFeature = () => {
               Intelligent Category Classification
             </h3>
             <p className="text-xl text-apple-gray-600">
-              Our AI automatically analyzes your products and suggests optimal category placement across marketplaces, increasing visibility and search relevance.
+            Our AI will analyze your products to suggest optimal category placements across all major marketplaces, instantly boosting visibility, search ranking, and listing efficiency.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start">

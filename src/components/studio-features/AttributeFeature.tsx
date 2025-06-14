@@ -38,7 +38,7 @@ const AttributeFeature = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2">✓</span>
-                <span>Enhanced search relevance with optimized attributes</span>
+                <span>Boosted listing efficiency with AI-optimized attributes</span>
               </li>
             </ul>
             {/* <a href="#" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">

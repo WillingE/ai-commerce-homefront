@@ -24,18 +24,21 @@ const BrandStory = () => {
 
             <div className="lg:w-1/2 space-y-6">
               <p className="text-lg text-apple-gray-600">
-                Homywork began in 2020 with a simple observation: cross-border e-commerce was unnecessarily complex. Our founders, with backgrounds in AI and international trade, envisioned a platform that could break down the barriers preventing businesses from reaching global markets.
+                Homywork was born inside a cross-border furniture company, where we managed thousands of SKUs across Wayfair, Home Depot, and Shopify.
               </p>
               <p className="text-lg text-apple-gray-600">
-                What started as a tool for optimizing product listings across languages has evolved into a comprehensive platform that handles everything from AI-powered content creation to cultural adaptation and marketplace integration. Along the way, we've helped thousands of businesses expand their reach and increase their global sales.
+                It wasn’t just listings. It was pricing updates, category mismatches, performance drops, photo edits, A/B testing, platform rules, and endless guesswork. We spent hours creating images, adjusting SEO, and reacting to scattered data every single day.
               </p>
               <p className="text-lg text-apple-gray-600">
-                Today, Homywork continues to innovate at the intersection of artificial intelligence and global commerce, guided by our belief that every business deserves the opportunity to succeed internationally.
+                We built Homywork because we needed more than tools. We required an AI-native manager. One that could generate images, fix weak listings, adapt in real time, and make smart decisions so we didn’t have to.
               </p>
-              <Button className="mt-8" variant="outline">
+              <p className="text-lg text-apple-gray-600">
+                What started as an internal fix is now powering storefronts globally, so sellers can stop juggling tasks, and start running their business like it runs itself.
+              </p>
+              {/* <Button className="mt-8" variant="outline">
                 Learn more about our journey
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </AnimatedElement>

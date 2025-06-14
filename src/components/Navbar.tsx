@@ -4,6 +4,13 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
+  const login = () => {
+    if (window.location.port === '8000') {
+      window.location.href = 'https://homywork.com:8000/PublishLogin'
+    } else {
+      window.location.href = 'https://homywork.com/PublishLogin'
+    }
+  }
   return <header className="w-full border-b bg-white sticky top-0 z-50 opacity-90">
       <div className="container max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center">
@@ -29,8 +36,8 @@ const Navbar = () => {
         </nav>
         
         <div className="flex items-center space-x-4">
-          <Button variant="outline" className="hidden md:inline-flex">
-            <a href="/publishLogin">Login</a>
+          <Button variant="outline" onClick={login} className="hidden md:inline-flex">
+            Login
           </Button>
           <Button>Get Started</Button>
         </div>

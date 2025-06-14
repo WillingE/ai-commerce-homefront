@@ -36,7 +36,7 @@ const ImageFeature = () => {
               <span className="text-sm font-medium text-blue-700">AI Image Studio</span>
             </div>
             <h3 className="text-2xl md:text-3xl font-semibold text-apple-gray-800">
-              Perfect Product Images, Automatically
+              AI-Powered Product Photo Makeover
             </h3>
             <p className="text-lg text-apple-gray-600">
               Transform ordinary product photos into professional-grade images with our AI enhancement technology that removes backgrounds, corrects lighting, and optimizes for every marketplace.

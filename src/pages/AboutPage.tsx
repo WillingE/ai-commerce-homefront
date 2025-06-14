@@ -23,7 +23,7 @@ const AboutPage = () => {
         <MissionVision />
         <CoreValues />
         <BrandStory />
-        <CoreTeam />
+        {/* <CoreTeam /> */}
         <ContactSection />
       </main>
       <Footer />
