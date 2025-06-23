@@ -11,6 +11,13 @@ const Navbar = () => {
       window.location.href = 'https://homywork.com/PublishLogin'
     }
   }
+  const register = () => {
+    if (window.location.port === '8000') {
+      window.location.href = 'https://homywork.com:8000/PublishRegister'
+    } else {
+      window.location.href = 'https://homywork.com/PublishRegister'
+    }
+  }
   return <header className="w-full border-b bg-white sticky top-0 z-50 opacity-90">
       <div className="container max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center">
@@ -39,7 +46,7 @@ const Navbar = () => {
           <Button variant="outline" onClick={login} className="hidden md:inline-flex">
             Login
           </Button>
-          <Button>Get Started</Button>
+          <Button onClick={register}>Get Started</Button>
         </div>
       </div>
     </header>;

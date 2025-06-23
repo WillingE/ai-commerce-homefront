@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button";
 import AnimatedElement from "./AnimatedElement";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+  const login = () => {
+    if (window.location.port === '8000') {
+      window.location.href = 'https://homywork.com:8000/PublishLogin'
+    } else {
+      window.location.href = 'https://homywork.com/PublishLogin'
+    }
+  }
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-apple-gray-100">
       {/* Abstract AI background animation - simplified gradient effect */}
@@ -34,6 +42,7 @@ const HeroSection = () => {
               <Button 
                 className="h-14 px-8 rounded-full bg-apple-blue hover:bg-blue-600 text-white text-lg font-medium transition duration-300 ease-in-out transform hover:scale-105"
                 size="lg"
+                onClick={login}
               >
                 Try Studio Free
               </Button>
@@ -42,7 +51,7 @@ const HeroSection = () => {
                 className="h-14 px-8 rounded-full border-2 border-apple-gray-400 text-apple-gray-700 hover:text-apple-gray-900 hover:border-apple-gray-800 text-lg font-medium transition duration-300 ease-in-out"
                 size="lg"
               >
-                Explore Features
+                <Link to="/product">Explore Features</Link>
               </Button>
             </div>
           </AnimatedElement>
