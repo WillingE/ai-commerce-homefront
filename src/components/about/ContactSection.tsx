@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, ArrowRight } from "lucide-react";
 import AnimatedElement from "../AnimatedElement";
+import { useNavigate } from "react-router-dom";
 
 const ContactSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 bg-apple-gray-100">
       <div className="container max-w-7xl mx-auto px-4">
@@ -12,25 +15,34 @@ const ContactSection = () => {
               Get in Touch
             </h2>
           </AnimatedElement>
-          
+
           <AnimatedElement animation="fade-up" delay={200} duration={800}>
             <p className="text-lg text-apple-gray-600 mb-14">
-              Have questions about how Homywork can help your business go global? We'd love to hear from you.
+              Have questions about how Homywork can help your business go
+              global? We'd love to hear from you.
             </p>
           </AnimatedElement>
-          
-          <div className="grid md:grid-cols-1 gap-8 max-w-md mx-auto" style={{display: 'flex', justifyContent: 'center'}}>
+
+          <div
+            className="grid md:grid-cols-1 gap-8 max-w-md mx-auto"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <AnimatedElement animation="fade-right" duration={1000} delay={400}>
               <div className="bg-white p-10 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex flex-col items-center">
                   <div className="w-16 h-16 flex items-center justify-center bg-blue-50 rounded-full mb-6">
                     <Mail className="h-8 w-8 text-apple-blue" />
                   </div>
-                  <h3 className="text-xl font-medium text-apple-gray-800 mb-3">Contact Us</h3>
+                  <h3 className="text-xl font-medium text-apple-gray-800 mb-3">
+                    Contact Us
+                  </h3>
                   <p className="text-apple-gray-600 mb-8 text-center">
                     Reach out to our team for any questions or inquiries.
                   </p>
-                  <Button className="group" onClick={() => window.open('https://www.linkedin.com/company/homywork-inc/?viewAsMember=true', '_blank')}>
+                  <Button
+                    className="group"
+                    onClick={() => navigate("/contact-sales")}
+                  >
                     Contact Us
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>

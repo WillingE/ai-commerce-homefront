@@ -1,9 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { Check } from "lucide-react";
 import AnimatedElement from "../AnimatedElement";
+import { useNavigate } from "react-router-dom";
 
 const PricingPlans = () => {
+  const navigate = useNavigate();
   const plans = [
     {
       name: "Starter",
@@ -63,8 +70,13 @@ const PricingPlans = () => {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <AnimatedElement key={plan.name} animation="fade-up" delay={index * 200} duration={800}>
-              <Card 
+            <AnimatedElement
+              key={plan.name}
+              animation="fade-up"
+              delay={index * 200}
+              duration={800}
+            >
+              <Card
                 className={`flex flex-col h-full border-2 ${
                   plan.popular ? "border-blue-500" : "border-transparent"
                 } shadow-sm hover:shadow-lg transition-shadow duration-300`}
@@ -75,10 +87,14 @@ const PricingPlans = () => {
                   </div>
                 )}
                 <CardHeader>
-                  <h3 className="text-2xl font-medium text-apple-gray-800">{plan.name}</h3>
+                  <h3 className="text-2xl font-medium text-apple-gray-800">
+                    {plan.name}
+                  </h3>
                   <div className="mt-4 flex items-baseline">
                     <span className="text-4xl font-semibold">{plan.price}</span>
-                    <span className="ml-1 text-apple-gray-600">{plan.period}</span>
+                    <span className="ml-1 text-apple-gray-600">
+                      {plan.period}
+                    </span>
                   </div>
                   <p className="mt-2 text-apple-gray-500">{plan.description}</p>
                 </CardHeader>
@@ -93,8 +109,16 @@ const PricingPlans = () => {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button 
-                    className={`w-full ${plan.popular ? "bg-blue-500 hover:bg-blue-600" : ""}`}
+                  <Button
+                    onClick={
+                      () =>
+                        plan.name === "Enterprise"
+                          ? navigate("/contact-sales")
+                          : navigate("/contact-sales") // change this to /register or actual flow if you want
+                    }
+                    className={`w-full ${
+                      plan.popular ? "bg-blue-500 hover:bg-blue-600" : ""
+                    }`}
                     variant={plan.name === "Enterprise" ? "outline" : "default"}
                   >
                     {plan.cta}
