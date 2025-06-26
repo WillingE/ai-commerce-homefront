@@ -15,6 +15,8 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import axios from "axios";
+import { Toaster,toast } from "sonner";
 
 export default function ContactSalesPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,13 +28,44 @@ export default function ContactSalesPage() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    try {
+      const res = await axios.post("/ai/contactSales/submitContactSales", data);
+      if (res.data.flag) {
+        toast.success("success", {
+          position: "top-center",
+          style: {
+            background: '#ecfdf3',
+            color: '#008a2e',
+            border: 'none'
+          }
+        });
+      } else {
+        toast.error(res.data.msg || "error", {
+          position: "top-center",
+          style: {
+            background: '#fef2f2',
+            color: '#dc2626',
+            border: 'none'
+          }
+        });
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Contact Homywork - Reach Out to Our Team"
-        description="Send us a message to learn how Homywork can help your business grow globally using AI."
-        canonical="https://homywork.com/contact-sales"
-        keywords="contact homywork, homywork support, homywork sales"
+        title="Contact Kekari - Reach Out to Our Team"
+        description="Send us a message to learn how Kekari can help your business grow globally using AI."
+        canonical="https://kekari.com/contact-sales"
+        keywords="contact kekari, kekari support, kekari sales"
       />
       <Navbar />
       <main className="flex-grow flex items-center justify-center p-4 bg-gray-50">
@@ -79,7 +112,7 @@ export default function ContactSalesPage() {
                     : "opacity-0 translate-y-4"
                 }`}
               >
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label
@@ -90,6 +123,7 @@ export default function ContactSalesPage() {
                       </Label>
                       <Input
                         id="name"
+                        name="name"
                         type="text"
                         required
                         className="h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500/20 rounded-lg"
@@ -106,6 +140,7 @@ export default function ContactSalesPage() {
                       </Label>
                       <Input
                         id="email"
+                        name="email"
                         type="email"
                         required
                         className="h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500/20 rounded-lg"
@@ -123,7 +158,8 @@ export default function ContactSalesPage() {
                         Phone Number
                       </Label>
                       <Input
-                        id="phone"
+                        id="phoneNumber"
+                        name="phoneNumber"
                         type="tel"
                         className="h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500/20 rounded-lg"
                         placeholder="+1 (555) 123-4567"
@@ -139,6 +175,7 @@ export default function ContactSalesPage() {
                       </Label>
                       <Input
                         id="profession"
+                        name="profession"
                         type="text"
                         className="h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500/20 rounded-lg"
                         placeholder="Your profession"
@@ -155,6 +192,7 @@ export default function ContactSalesPage() {
                     </Label>
                     <Textarea
                       id="message"
+                      name="message"
                       rows={6}
                       className="border-gray-200 focus:border-blue-500 focus:ring-blue-500/20 rounded-lg resize-none"
                       placeholder="Tell us about your project, questions, or how we can assist you..."
